@@ -10,17 +10,19 @@
     "export": "yarn build && next export -o _static"
   },
   "dependencies": {
+    "bootstrap": "5.2.0-beta1",
     "next": "12.2.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-lazy-load-image-component": "1.5.4"
   },
   "devDependencies": {
+    "@next/eslint-plugin-next": "12.2.2",
     "eslint": "8.19.0",
     "eslint-config-next": "12.2.2",
-    "@next/eslint-plugin-next": "12.2.2",
     "eslint-config-prettier": "8.5.0",
     "prettier": "2.7.1",
+    "sass": "1.53.0",
     "typescript": "4.7.4"
   }
 }

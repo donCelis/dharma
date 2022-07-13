@@ -1,4 +1,5 @@
-import '../styles/globals.css'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import '../styles/globals.scss'
 
 import Head from 'next/head';
 import App from 'next/app';
