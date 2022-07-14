@@ -2,4 +2,5 @@
 
 /* pages */
 // home
-@use './homeHeader';
+@use './sections/homeHeader';
+@use './sections/homeHero';
