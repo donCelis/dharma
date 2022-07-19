@@ -4,6 +4,7 @@ import HomeHeader from 'src/components/home/HomeHeader';
 import HomeHero from 'src/components/home/HomeHero';
 import HomeDiscover from 'src/components/home/HomeDiscover';
 import HomeList from 'src/components/home/HomeList';
+import HomeFeatures from 'src/components/home/HomeFeatures';
 
 export default function Home() {
   const data_head = {
@@ -16,6 +17,7 @@ export default function Home() {
       <HomeHero />
       <HomeDiscover />
       <HomeList />
+      <HomeFeatures />
     </Page>
   );
 }

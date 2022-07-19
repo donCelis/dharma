@@ -1,0 +1,14 @@
+.home_features {
+  padding: 2rem 0;
+  &_title {
+    text-decoration: underline;
+    color: #6F7070;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 24px;
+      margin-right: 0.6rem;
+    }
+  }
+}

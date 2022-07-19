@@ -8,12 +8,13 @@
     }
   }
   &_title {
-    text-align: center;
     color: #6f7070;
     margin-bottom: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     img {
       width: 24px;
-      vertical-align: unset;
       margin-right: 0.6rem;
     }
   }
