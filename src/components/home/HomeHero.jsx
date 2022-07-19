@@ -8,7 +8,7 @@ export default function HomeHero() {
           <aside className='col-12 col-md-6'>
             <article>
               <Image className='hero_logo' width='160px' src='./images/dharma.svg' alt='Dharma Logo' />
-              <h4 className='hero_title'>ENERGY HEALING FOR ALL</h4>
+              <h3 className='hero_title'>ENERGY HEALING FOR ALL</h3>
               <p className='hero_info'>
                 We’ve built this platform so you can easily find and book alternative healing sessions with local &
                 bilingual energy healers.
@@ -25,9 +25,7 @@ export default function HomeHero() {
         </div>
         <button className='scroll_down'>
           <small>SCROLL DOWN</small>
-          <span>
-            <img src='' alt='' />
-          </span>
+          <Image src='./images/icon_down.svg' alt='icon down' />
         </button>
       </div>
     </section>

@@ -10,9 +10,10 @@ export default function HomeDiscover() {
           </aside>
           <aside>
             <article className='home_discover_info'>
-              <h4>DISCOVER</h4>
+              <h3>DISCOVER</h3>
               <p className='col-12 col-md-8 col-lg-6'>
-                Once on the app, YOU can book sessions from our network of <strong>Energy Healers</strong> and <strong>Holistic Practitioners.</strong>
+                Once on the app, YOU can book sessions from our network of <strong>Energy Healers</strong> and{' '}
+                <strong>Holistic Practitioners.</strong>
               </p>
             </article>
             <div className='row gx-md-5 gy-5 gy-md-0'>

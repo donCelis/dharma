@@ -1,0 +1,47 @@
+.home_list {
+  background: #edf5f58b;
+  padding: 3rem 0;
+  .image img {
+    height: 25rem;
+    @media (max-width: 768px) {    
+      display: none;
+    }
+  }
+  &_title {
+    text-align: center;
+    color: #6f7070;
+    margin-bottom: 1.2rem;
+    img {
+      width: 24px;
+      vertical-align: unset;
+      margin-right: 0.6rem;
+    }
+  }
+  ul {
+    list-style-type: none;
+    li {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 1rem;
+      &::before {
+        content: '';
+        margin-left: -1rem;
+        margin-right: 5px;
+        margin-top: 6px;
+        min-width: 12px;
+        min-height: 12px;
+        background-color: #6f7070;
+        mask-image: url('../../../public/images/icon_list.svg');
+        mask-size: cover;
+        mask-repeat: no-repeat;
+      }
+      p {
+        color: #959595;
+        font-size: 20px;
+        span {
+          color: #9ed3e8;
+        }
+      }
+    }
+  }
+}

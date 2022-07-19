@@ -11,8 +11,6 @@
       color: hsl(180, 3%, 68%);
       letter-spacing: 1px;
       margin-bottom: 1rem;
-      font-size: 1.6em;
-      font-family: 'Avenir', sans-serif;
     }
     &_info {
       color: hsl(246, 33%, 33%);
@@ -40,5 +38,15 @@
     border: 0;
     background: transparent;
     margin-bottom: 0.6rem;
+    font-family: 'Avenir';
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    small{
+      font-size: 0.8em;
+    }
+    img{
+      width: 10px;
+    }
   }
 }
