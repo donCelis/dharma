@@ -12,18 +12,21 @@
       letter-spacing: 1px;
       margin-bottom: 1rem;
       font-size: 1.6em;
+      font-family: 'Avenir', sans-serif;
     }
     &_info {
       color: hsl(246, 33%, 33%);
-      letter-spacing: 1px;
+      letter-spacing: 0.5px;
       margin: 0;
+      font-family: 'Avenir', sans-serif;
+      font-weight: bold;
     }
     &_app_store {
       margin: 2.5rem 0;
     }
     &_phone {
       display: flex;
-      justify-content: center;
+      justify-content: flex-end;
     }
     &_slider {
       width: 240px;

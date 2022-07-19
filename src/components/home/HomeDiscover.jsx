@@ -9,15 +9,14 @@ export default function HomeDiscover() {
             <img className='icon' src='./images/highlight.svg' alt='' />
           </aside>
           <aside>
-            <article>
+            <article className='home_discover_info'>
               <h4>DISCOVER</h4>
-              <p>
-                Once on the app, YOU can book sessions <br /> from our network of <strong>Energy Healers</strong> and <br />
-                <strong>Holistic Practitioners.</strong>
+              <p className='col-12 col-md-8 col-lg-6'>
+                Once on the app, YOU can book sessions from our network of <strong>Energy Healers</strong> and <strong>Holistic Practitioners.</strong>
               </p>
             </article>
-            <div className='row gx-md-5'>
-              <aside className='col-4'>
+            <div className='row gx-md-5 gy-5 gy-md-0'>
+              <aside className='col-12 col-md-4'>
                 <article className='discover_item'>
                   <Image className='img-fluid' src='./images/discover/photo_1/image@2x.png' alt='' />
                   <p>
@@ -25,7 +24,7 @@ export default function HomeDiscover() {
                   </p>
                 </article>
               </aside>
-              <aside className='col-4'>
+              <aside className='col-12 col-md-4'>
                 <article className='discover_item discover_item_mod'>
                   <Image className='img-fluid' src='./images/discover/photo_2/image@2x.png' alt='' />
                   <p>
@@ -33,7 +32,7 @@ export default function HomeDiscover() {
                   </p>
                 </article>
               </aside>
-              <aside className='col-4'>
+              <aside className='col-12 col-md-4'>
                 <article className='discover_item'>
                   <Image className='img-fluid' src='./images/discover/photo_3/image@2x.png' alt='' />
                   <p>

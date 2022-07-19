@@ -5,19 +5,19 @@ export default function HomeHero() {
     <section className='home_hero'>
       <div className='container mod_container'>
         <div className='row'>
-          <aside className='col-6'>
+          <aside className='col-12 col-md-6'>
             <article>
               <Image className='hero_logo' width='160px' src='./images/dharma.svg' alt='Dharma Logo' />
               <h4 className='hero_title'>ENERGY HEALING FOR ALL</h4>
               <p className='hero_info'>
-                We’ve built this platform so you can easily <br /> find and book alternative healing sessions <br />{' '}
-                with local & bilingual energy healers.
+                We’ve built this platform so you can easily find and book alternative healing sessions with local &
+                bilingual energy healers.
               </p>
               <Image className='hero_app_store' width='120px' src='./images/app_store.svg' alt='Appstore' />
               <div className='hero_slider' />
             </article>
           </aside>
-          <aside className='col-6'>
+          <aside className='col-12 col-md-6 d-md-block d-none'>
             <aside className='hero_phone'>
               <Image width='300px' src='./images/phone/1.png' alt='iphone' />
             </aside>
@@ -25,7 +25,9 @@ export default function HomeHero() {
         </div>
         <button className='scroll_down'>
           <small>SCROLL DOWN</small>
-          <span><img src='' alt='' /></span>
+          <span>
+            <img src='' alt='' />
+          </span>
         </button>
       </div>
     </section>

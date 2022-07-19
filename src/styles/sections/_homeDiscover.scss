@@ -1,7 +1,7 @@
 .home_discover {
   background: hsla(220, 48%, 90%, 0.243);
   padding: 2rem 0 3.5rem;
-  @media (min-width: 768px) {
+  @media (min-width: 992px) {
     .gx-md-5 {
       --bs-gutter-x: 7rem;
     }
@@ -9,8 +9,21 @@
   .icon {
     width: 18px;
   }
+  &_info {
+    font-family: 'Avenir', sans-serif;
+    color: #6F7070;
+    margin-bottom: 2rem;
+    p {
+      margin: 0;
+      font-size: 1em;
+      strong {
+        font-family: 'Avenir Next', sans-serif;
+        color: #737C7C;
+      }
+    }
+  }
   .discover_item {
-    padding: 1.5rem;
+    padding: 1.5rem 2rem;
     text-align: center;
     border: #86c7e2 solid 2px;
     background: #f4f7ff;
