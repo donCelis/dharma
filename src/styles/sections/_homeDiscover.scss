@@ -1,0 +1,29 @@
+.home_discover {
+  background: hsla(220, 48%, 90%, 0.243);
+  padding: 2rem 0 3.5rem;
+  @media (min-width: 768px) {
+    .gx-md-5 {
+      --bs-gutter-x: 7rem;
+    }
+  }
+  .icon {
+    width: 18px;
+  }
+  .discover_item {
+    padding: 1.5rem;
+    text-align: center;
+    border: #86c7e2 solid 2px;
+    background: #f4f7ff;
+    border-radius: 6px;
+    &_mod {
+      background: #dbf7f134;
+    }
+    p {
+      color: #85c8e2;
+      font-size: 1.3em;
+      line-height: 1.8rem;
+      margin: 0;
+      margin-top: 1.4rem;
+    }
+  }
+}

@@ -1,10 +1,7 @@
 .home_hero {
-  padding: 2rem 0;
-  .mod_container{
-    width: 75%;
-  }
   .row {
     align-items: center;
+    padding: 2rem 0;
   }
   .hero {
     &_logo {
@@ -34,5 +31,11 @@
       border-radius: 5px;
       background: linear-gradient(90deg, hsl(207, 51%, 56%) 0%, hsl(190, 51%, 59%) 46%, hsl(162, 97%, 73%) 100%);
     }
+  }
+  .scroll_down{
+    color: hsl(180, 3%, 68%);
+    border: 0;
+    background: transparent;
+    margin-bottom: 0.6rem;
   }
 }

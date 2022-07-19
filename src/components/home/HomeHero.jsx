@@ -23,6 +23,10 @@ export default function HomeHero() {
             </aside>
           </aside>
         </div>
+        <button className='scroll_down'>
+          <small>SCROLL DOWN</small>
+          <span><img src='' alt='' /></span>
+        </button>
       </div>
     </section>
   );
