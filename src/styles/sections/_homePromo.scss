@@ -1,0 +1,45 @@
+.home_promo {
+  padding: 2rem 0;
+  &_info {
+    border-top: 1px solid #050404;
+    display: grid;
+    place-content: center;
+    text-align: center;
+    padding: 5rem 0 2rem;
+    gap: 2rem;
+    figure {
+      position: relative;
+      &::before,
+      &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        width: 9rem;
+        height: 9rem;
+        border-radius: 100%;
+        filter: blur(50px) opacity(0.5);
+        z-index: -1;
+      }
+      &::before {
+        left: 0;
+        background: #3C4FE3A0;
+      }
+      &::after {
+        right: 0;
+        background: #78FFD5A0;
+      }
+      .logo_promo {
+        width: 8rem;
+        margin: 0 auto;
+      }
+    }
+
+    .app_store {
+      width: 8rem;
+      margin: 0 auto;
+    }
+    p {
+      font-size: 1.2em;
+    }
+  }
+}

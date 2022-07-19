@@ -2,13 +2,33 @@
   padding: 2rem 0;
   &_title {
     text-decoration: underline;
-    color: #6F7070;
+    color: #6f7070;
     display: flex;
     justify-content: center;
     align-items: center;
     img {
       width: 24px;
       margin-right: 0.6rem;
+    }
+  }
+  .features_item {
+    text-align: center;
+    .number {
+      color: #9ed3e8;
+      font-size: 1.6em;
+      border: 2px solid #9ee8dd;
+      display: inline-block;
+      padding: 0.4rem 1.1rem;
+      border-radius: 100%;
+      min-width: 55px;
+      min-height: 55px;
+    }
+    h5 {
+      color: #9ed3e8;
+      text-decoration: underline;
+    }
+    p {
+      color: #959595;
     }
   }
 }

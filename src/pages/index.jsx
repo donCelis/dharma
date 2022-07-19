@@ -5,6 +5,8 @@ import HomeHero from 'src/components/home/HomeHero';
 import HomeDiscover from 'src/components/home/HomeDiscover';
 import HomeList from 'src/components/home/HomeList';
 import HomeFeatures from 'src/components/home/HomeFeatures';
+import HomePromo from 'src/components/home/HomePromo';
+import Footer from 'src/components/Footer';
 
 export default function Home() {
   const data_head = {
@@ -18,6 +20,8 @@ export default function Home() {
       <HomeDiscover />
       <HomeList />
       <HomeFeatures />
+      <HomePromo />
+      <Footer />
     </Page>
   );
 }
