@@ -24,7 +24,6 @@
         @include mobile {
           width: 10rem;
           height: 10rem;
-          filter: blur(25px) opacity(0.3);
         }
       }
       &::before {
@@ -48,6 +47,9 @@
     }
     h3 {
       @include font('AvenirNext-UltraLight');
+      @include mobile{
+        margin-top: 1.5rem;
+      }
     }
     .app_store {
       width: 9rem;
