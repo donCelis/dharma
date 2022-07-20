@@ -5,12 +5,17 @@ export default function HomeDiscover() {
     <section className='home_discover'>
       <div className='container mod_container'>
         <section className='d-flex gap-2'>
-          <aside>
+          <aside className='hide'>
             <img className='icon' src='./images/highlight.svg' alt='' />
           </aside>
           <aside>
             <article className='home_discover_info'>
-              <h3>DISCOVER</h3>
+              <div className='d-flex'>
+                <figure className='m-0'>
+                  <img className='icon view' src='./images/highlight.svg' alt='' />
+                </figure>
+                <h3 className='m-0'>DISCOVER</h3>
+              </div>
               <p className='col-12 col-md-8 col-lg-6'>
                 Once on the app, YOU can book sessions from our network of <strong>Energy Healers</strong> and{' '}
                 <strong>Holistic Practitioners.</strong>
@@ -37,7 +42,7 @@ export default function HomeDiscover() {
                 <article className='discover_item'>
                   <Image className='img-fluid' src='./images/discover/photo_3/image@2x.png' alt='' />
                   <p>
-                    Reiki <br /> Therapy
+                    Holistic <br /> Massage
                   </p>
                 </article>
               </aside>

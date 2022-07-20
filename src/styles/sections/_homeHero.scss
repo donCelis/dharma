@@ -1,11 +1,37 @@
 .home_hero {
+  position: relative;
+  overflow-x: hidden;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    width: 80%;
+    height: 70px;
+    background: #78ffd5a0;
+    filter: blur(50px) opacity(0.5);
+  }
   .row {
     align-items: center;
     padding: 2rem 0;
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 1rem;
+      z-index: -1;
+      width: 200px;
+      height: 100px;
+      background: #9278ffa0;
+      transform: scaleX(2) scaleY(1.5);
+      filter: blur(50px) opacity(0.4);
+    }
   }
   .hero {
     &_logo {
-      margin-bottom: 2.5rem;
+      margin-bottom: 3rem;
     }
     &_title {
       color: hsl(180, 3%, 68%);
@@ -17,9 +43,10 @@
       letter-spacing: 0.5px;
       margin: 0;
       font-weight: bold;
+      font-size: 1.2em;
     }
     &_app_store {
-      margin: 2.5rem 0;
+      margin: 3rem 0;
     }
     &_phone {
       display: flex;
@@ -27,25 +54,25 @@
     }
     &_slider {
       width: 240px;
-      height: 28px;
-      border-radius: 5px;
+      height: 36px;
+      border-radius: 7px;
       background: linear-gradient(90deg, hsl(207, 51%, 56%) 0%, hsl(190, 51%, 59%) 46%, hsl(162, 97%, 73%) 100%);
     }
   }
-  .scroll_down{
+  .scroll_down {
     color: hsl(180, 3%, 68%);
     border: 0;
     background: transparent;
     margin-bottom: 0.6rem;
-    font-family: 'Avenir';
     display: inline-flex;
     align-items: center;
-    gap: 0.6rem;
-    small{
-      font-size: 0.8em;
+    gap: 0.5rem;
+    small {
+      letter-spacing: 0.5px;
+      font-size: 0.9em;
     }
-    img{
-      width: 10px;
+    img {
+      width: 8px;
     }
   }
 }

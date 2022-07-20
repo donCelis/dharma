@@ -1,4 +1,7 @@
 .home_header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
   background: linear-gradient(
     180deg,
     hsla(164, 88%, 71%, 0.6) 0%,

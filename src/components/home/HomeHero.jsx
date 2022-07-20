@@ -7,7 +7,7 @@ export default function HomeHero() {
         <div className='row'>
           <aside className='col-12 col-md-6'>
             <article>
-              <Image className='hero_logo' width='160px' src='./images/dharma.svg' alt='Dharma Logo' />
+              <Image className='hero_logo' width='180px' src='./images/dharma.svg' alt='Dharma Logo' />
               <h3 className='hero_title'>ENERGY HEALING FOR ALL</h3>
               <p className='hero_info'>
                 We’ve built this platform so you can easily find and book alternative healing sessions with local &
@@ -19,7 +19,7 @@ export default function HomeHero() {
           </aside>
           <aside className='col-12 col-md-6 d-md-block d-none'>
             <aside className='hero_phone'>
-              <Image width='300px' src='./images/phone/1.png' alt='iphone' />
+              <Image width='320px' src='./images/phone/1.png' alt='iphone' />
             </aside>
           </aside>
         </div>

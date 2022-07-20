@@ -3,10 +3,24 @@
 .home_list {
   background: #edf5f58b;
   padding: 3rem 0;
-  .image img {
-    height: 25rem;
-    @include tablet {    
-      display: none;
+  .image {
+    &:first-child img {
+      transform: translateX(40%);
+      @include desktop-sm {
+        transform: translateX(0%);
+      }
+    }
+    &:last-child img {
+      transform: translateX(-40%);
+      @include desktop-sm {
+        transform: translateX(0%);
+      }
+    }
+    img {
+      height: 25rem;
+      @include tablet {
+        display: none;
+      }
     }
   }
   &_title {
