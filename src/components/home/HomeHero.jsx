@@ -13,7 +13,7 @@ export default function HomeHero() {
                 We’ve built this platform so you can easily find and book alternative healing sessions with local &
                 bilingual energy healers.
               </p>
-              <Image className='hero_app_store' width='120px' src='./images/app_store.svg' alt='Appstore' />
+              <Image className='hero_app_store' src='./images/app_store.svg' alt='Appstore' />
               <div className='hero_slider' />
             </article>
           </aside>

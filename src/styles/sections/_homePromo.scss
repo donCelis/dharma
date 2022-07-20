@@ -1,5 +1,8 @@
+@use '../partials/' as *;
+
 .home_promo {
   padding: 2rem 0;
+  overflow-x: hidden;
   &_info {
     border-top: 1px solid #050404;
     display: grid;
@@ -22,11 +25,11 @@
         z-index: -1;
       }
       &::before {
-        left: -2.5rem;
+        left: -1.5rem;
         background: #3c4fe3a0;
       }
       &::after {
-        right: -2.5rem;
+        right: -1.5rem;
         background: #78ffd5a0;
       }
       .logo_promo {
@@ -41,6 +44,11 @@
     }
     p {
       font-size: 1.4em;
+      @include mobile {
+        br {
+          display: none;
+        }
+      }
     }
   }
 }

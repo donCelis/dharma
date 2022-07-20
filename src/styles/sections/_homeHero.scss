@@ -1,6 +1,11 @@
+@use '../partials/' as *;
+
 .home_hero {
   position: relative;
   overflow-x: hidden;
+  @include mobile {
+    text-align: center;
+  }
   &::before {
     content: '';
     position: absolute;
@@ -27,6 +32,9 @@
       background: #9278ffa0;
       transform: scaleX(2) scaleY(1.5);
       filter: blur(50px) opacity(0.4);
+      @include mobile {
+        display: none;
+      }
     }
   }
   .hero {
@@ -47,6 +55,10 @@
     }
     &_app_store {
       margin: 3rem 0;
+      width: 7.5rem;
+      @include mobile {
+        width: 8.75rem;
+      }
     }
     &_phone {
       display: flex;
@@ -57,6 +69,9 @@
       height: 36px;
       border-radius: 7px;
       background: linear-gradient(90deg, hsl(207, 51%, 56%) 0%, hsl(190, 51%, 59%) 46%, hsl(162, 97%, 73%) 100%);
+      @include mobile {
+        width: 100%;
+      }
     }
   }
   .scroll_down {
