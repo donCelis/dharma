@@ -13,7 +13,8 @@
       &::after {
         content: '';
         position: absolute;
-        top: 0;
+        top: 50%;
+        transform: translateY(-50%);
         width: 9rem;
         height: 9rem;
         border-radius: 100%;
@@ -22,11 +23,11 @@
       }
       &::before {
         left: 0;
-        background: #3C4FE3A0;
+        background: #3c4fe3a0;
       }
       &::after {
         right: 0;
-        background: #78FFD5A0;
+        background: #78ffd5a0;
       }
       .logo_promo {
         width: 8rem;

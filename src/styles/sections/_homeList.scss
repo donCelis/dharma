@@ -1,9 +1,11 @@
+@use '../partials/' as *;
+
 .home_list {
   background: #edf5f58b;
   padding: 3rem 0;
   .image img {
     height: 25rem;
-    @media (max-width: 768px) {    
+    @include tablet {    
       display: none;
     }
   }

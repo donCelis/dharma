@@ -1,5 +1,7 @@
+@use '../partials/' as *;
+
 .home_discover {
-  background: #DAE2F23E;
+  background: #dae2f23e;
   padding: 2rem 0 3.5rem;
   @media (min-width: 992px) {
     .gx-md-5 {
@@ -11,14 +13,14 @@
   }
   &_info {
     font-family: 'Avenir', sans-serif;
-    color: #6F7070;
+    color: #6f7070;
     margin-bottom: 2rem;
     p {
       margin: 0;
       font-size: 20px;
       strong {
         font-family: 'Avenir Next', sans-serif;
-        color: #737C7C;
+        color: #737c7c;
       }
     }
   }
@@ -28,7 +30,7 @@
     border: #86c7e2 solid 2px;
     background: #f4f7ff;
     border-radius: 6px;
-    @media (max-width: 768px) {    
+    @include tablet {
       width: 60%;
       margin: 0 auto;
     }
