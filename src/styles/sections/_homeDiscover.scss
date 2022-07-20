@@ -42,10 +42,8 @@
     @include desktop-md {
       gap: 4rem;
     }
-    @include desktop-sm {
-      gap: 2rem;
-    }
     @include tablet {
+      gap: 5rem;
       grid-template-columns: repeat(2, 1fr);
     }
     @include mobile {
@@ -60,14 +58,14 @@
     &:last-child {
       @include tablet {
         grid-column: 1/-1;
-        width: 50%;
+        width: 40%;
         margin: 0 auto;
       }
       @include mobile {
         width: 70%;
       }
     }
-    @include mobile {
+    @include tablet {
       width: 70%;
       margin: 0 auto;
     }
