@@ -76,49 +76,45 @@
     }
   }
   .discover_item {
-    &.front,
-    &.back {
-      border-radius: 8px;
-    }
-    &.front {
-      padding: 1.5rem 2rem;
+    border-radius: 8px;
+    padding: 1.5rem 2rem;
+    border: #86c7e2 solid 2px;
+    background: #f4f7ff;
+    &.front p {
       text-align: center;
-      border: #86c7e2 solid 2px;
-      background: #f4f7ff;
-      &_mod {
-        background: #dbf7f134;
-      }
-      p {
-        color: #85c8e2;
-        font-size: 1.5em;
-        line-height: 1.8rem;
-        margin: 0;
-        margin-top: 1.4rem;
-        @include font('AvenirNext-Medium');
-      }
+      color: #85c8e2;
+      font-size: 1.5em;
+      line-height: 1.8rem;
+      margin: 0;
+      margin-top: 1.4rem;
+      @include font('AvenirNext-Medium');
+    }
+    &_mod {
+      background: #dbf7f134;
     }
     &.back {
       padding: 1.5rem;
       display: grid;
       place-content: center;
       gap: 1rem;
+      border: 2px solid #707070;
       background: #707070;
       width: 100%;
       height: 100%;
       position: absolute;
       top: 0;
       left: 0;
-      transform: translateY(100%);
+      transform: translateY(110%);
       transition: transform ease-in-out 0.5s;
       color: #f7f7f7;
       @include font('PTSans-CaptionBold');
       p {
         margin: 0;
         font-size: 1em;
-        @include tablet{
+        @include tablet {
           font-size: 0.9em;
         }
-        @include mobile-sm{
+        @include mobile-sm {
           font-size: 0.8em;
         }
       }

@@ -42,7 +42,7 @@ export default function HomeDiscover() {
                 </article>
               </div>
               <div className='flip'>
-                <article className='discover_item front discover_item_mod '>
+                <article className='discover_item front discover_item_mod'>
                   <Image className='img-fluid' src='./images/discover/photo_2/image@2x.png' alt='' />
                   <p>
                     Reiki <br /> Therapy
