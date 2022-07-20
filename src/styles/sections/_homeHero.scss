@@ -2,7 +2,7 @@
 
 .home_hero {
   position: relative;
-  overflow-x: hidden;
+  overflow: hidden;
   @include mobile {
     text-align: center;
   }
@@ -16,6 +16,9 @@
     height: 70px;
     background: #78ffd5a0;
     filter: blur(50px) opacity(0.5);
+    @include mobile{
+      width: 100%;
+    }
   }
   .row {
     align-items: center;
@@ -24,14 +27,13 @@
     &::before {
       content: '';
       position: absolute;
-      top: 0;
-      right: 1rem;
       z-index: -1;
-      width: 200px;
-      height: 100px;
+      top: -2rem;
+      right: 2rem;
+      width: 24rem;
+      height: 6.25rem;
       background: #9278ffa0;
-      transform: scaleX(2) scaleY(1.5);
-      filter: blur(50px) opacity(0.4);
+      filter: blur(50px) opacity(0.5);
       @include mobile {
         display: none;
       }

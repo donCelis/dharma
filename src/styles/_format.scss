@@ -8,11 +8,6 @@
   outline: 0;
 }
 
-html,
-body {
-  overflow-x: hidden;
-}
-
 body {
   background: hsl(0, 0%, 97%);
   @include font('Avenir');

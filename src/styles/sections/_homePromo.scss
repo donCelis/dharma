@@ -1,8 +1,6 @@
 @use '../partials/' as *;
 
 .home_promo {
-  /* padding: 2rem 0; */
-  /* overflow-x: hidden; */
   &_info {
     border-top: 1px solid #050404;
     display: grid;
@@ -23,13 +21,23 @@
         border-radius: 100%;
         filter: blur(50px) opacity(0.3);
         z-index: -1;
+        @include mobile {
+          width: 10rem;
+          height: 10rem;
+        }
       }
       &::before {
         left: -1.5rem;
+        @include mobile {
+          left: 0;
+        }
         background: #3c4fe3a0;
       }
       &::after {
         right: -1.5rem;
+        @include mobile {
+          right: 0;
+        }
         background: #78ffd5a0;
       }
       .logo_promo {
