@@ -39,22 +39,23 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 7rem;
-    @include desktop-sm {
+    @include desktop-md {
       gap: 4rem;
     }
+    @include desktop-sm {
+      gap: 2rem;
+    }
     @include tablet {
-      gap: 3rem;
       grid-template-columns: repeat(2, 1fr);
     }
     @include mobile {
+      gap: 3rem;
       grid-template-columns: 1fr;
     }
   }
-  .discover_item {
-    padding: 1.5rem 2rem;
-    text-align: center;
-    border: #86c7e2 solid 2px;
-    background: #f4f7ff;
+  .flip {
+    position: relative;
+    overflow: hidden;
     border-radius: 8px;
     &:last-child {
       @include tablet {
@@ -63,23 +64,76 @@
         margin: 0 auto;
       }
       @include mobile {
-        width: 60%;
+        width: 70%;
       }
     }
     @include mobile {
-      width: 60%;
+      width: 70%;
       margin: 0 auto;
     }
-    &_mod {
-      background: #dbf7f134;
+    &:hover .back {
+      transform: translateY(0);
     }
-    p {
-      color: #85c8e2;
-      font-size: 1.5em;
-      line-height: 1.8rem;
-      margin: 0;
-      margin-top: 1.4rem;
-      @include font('AvenirNext-Medium');
+  }
+  .discover_item {
+    &.front,
+    &.back {
+      border-radius: 8px;
+    }
+    &.front {
+      padding: 1.5rem 2rem;
+      text-align: center;
+      border: #86c7e2 solid 2px;
+      background: #f4f7ff;
+      &_mod {
+        background: #dbf7f134;
+      }
+      p {
+        color: #85c8e2;
+        font-size: 1.5em;
+        line-height: 1.8rem;
+        margin: 0;
+        margin-top: 1.4rem;
+        @include font('AvenirNext-Medium');
+      }
+    }
+    &.back {
+      padding: 1.5rem;
+      display: grid;
+      place-content: center;
+      gap: 1rem;
+      background: #707070;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translateY(100%);
+      transition: transform ease-in-out 0.5s;
+      color: #f7f7f7;
+      @include font('PTSans-CaptionBold');
+      p {
+        margin: 0;
+        font-size: 1em;
+        @include tablet{
+          font-size: 0.9em;
+        }
+        @include mobile-sm{
+          font-size: 0.8em;
+        }
+      }
+      small {
+        font-weight: 100;
+      }
+      ul {
+        padding-inline-start: 0;
+        margin: 0;
+        list-style-position: inside;
+        font-weight: 100;
+        li {
+          font-size: 0.8em;
+        }
+      }
     }
   }
 }

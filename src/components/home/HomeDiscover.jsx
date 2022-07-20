@@ -22,24 +22,60 @@ export default function HomeDiscover() {
               </p>
             </article>
             <div className='discover_list'>
-              <article className='discover_item'>
-                <Image className='img-fluid' src='./images/discover/photo_1/image@2x.png' alt='' />
-                <p>
-                  Sound <br /> Healing
-                </p>
-              </article>
-              <article className='discover_item discover_item_mod'>
-                <Image className='img-fluid' src='./images/discover/photo_2/image@2x.png' alt='' />
-                <p>
-                  Reiki <br /> Therapy
-                </p>
-              </article>
-              <article className='discover_item'>
-                <Image className='img-fluid' src='./images/discover/photo_3/image@2x.png' alt='' />
-                <p>
-                  Holistic <br /> Massage
-                </p>
-              </article>
+              <div className='flip'>
+                <article className='discover_item front'>
+                  <Image className='img-fluid' src='./images/discover/photo_1/image@2x.png' alt='' />
+                  <p>
+                    Sound <br /> Healing
+                  </p>
+                </article>
+                <article className='discover_item back'>
+                  <p>
+                    Sound Healing uses vibrations from singing bowls and other instruments to relax your mind, body and
+                    soul.
+                  </p>
+                  <small>Benefits:</small>
+                  <ul>
+                    <li>Improves Health</li>
+                    <li>Relieves Anxiety & Stress</li>
+                  </ul>
+                </article>
+              </div>
+              <div className='flip'>
+                <article className='discover_item front discover_item_mod '>
+                  <Image className='img-fluid' src='./images/discover/photo_2/image@2x.png' alt='' />
+                  <p>
+                    Reiki <br /> Therapy
+                  </p>
+                </article>
+                <article className='discover_item back'>
+                  <p>
+                    Reiki is a healing technique that produces profound results through gentle touch, and energy
+                    transfer.
+                  </p>
+                  <small>Benefits:</small>
+                  <ul>
+                    <li>Balance Chakras</li>
+                    <li>Speeds Spiritual Growth</li>
+                  </ul>
+                </article>
+              </div>
+              <div className='flip'>
+                <article className='discover_item front'>
+                  <Image className='img-fluid' src='./images/discover/photo_3/image@2x.png' alt='' />
+                  <p>
+                    Holistic <br /> Massage
+                  </p>
+                </article>
+                <article className='discover_item back'>
+                  <p>Holistic massages are a combination of energy healing techniques and bodywork blended together.</p>
+                  <small>Benefits:</small>
+                  <ul>
+                    <li>Relieves Stress</li>
+                    <li>Reduce Muscle Tension</li>
+                  </ul>
+                </article>
+              </div>
             </div>
           </aside>
         </section>
