@@ -24,21 +24,22 @@
         @include mobile {
           width: 10rem;
           height: 10rem;
+          filter: blur(25px) opacity(0.3);
         }
       }
       &::before {
         left: -1.5rem;
+        background: #3c4fe3a0;
         @include mobile {
           left: 0;
         }
-        background: #3c4fe3a0;
       }
       &::after {
         right: -1.5rem;
+        background: #78ffd5a0;
         @include mobile {
           right: 0;
         }
-        background: #78ffd5a0;
       }
       .logo_promo {
         width: 9rem;
