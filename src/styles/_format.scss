@@ -1,20 +1,6 @@
 @use './partials/' as *;
 
-/* fonts types */
-@font-face {
-  font-family: 'Avenir';
-  src: url('/fonts/avenir.ttc');
-}
-
-@font-face {
-  font-family: 'Avenir Next';
-  src: url('/fonts/avenir_Next.ttc');
-}
-
-@font-face {
-  font-family: 'Avenir Next Condensed';
-  src: url('/fonts/avenir_Next_Condensed.ttc');
-}
+@use './partials/fonts';
 
 * {
   padding: 0;
@@ -22,13 +8,14 @@
   outline: 0;
 }
 
-html, body{
+html,
+body {
   overflow-x: hidden;
 }
 
 body {
   background: hsl(0, 0%, 97%);
-  font-family: 'Avenir', system-ui, -apple-system;
+  @include font('Avenir');
 }
 
 a {

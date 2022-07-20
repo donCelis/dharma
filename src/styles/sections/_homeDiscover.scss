@@ -21,12 +21,16 @@
   &_info {
     color: #6f7070;
     margin-bottom: 2rem;
+    h3 {
+      @include font('Avenir-Heavy');
+    }
     p {
       margin: 0;
       margin-top: 1rem;
       font-size: 1.35em;
+      @include font('AvenirNext-Regular');
       strong {
-        font-family: 'Avenir Next', sans-serif;
+        @include font('AvenirNext-Medium');
         color: #737c7c;
       }
     }
@@ -71,10 +75,11 @@
     }
     p {
       color: #85c8e2;
-      font-size: 1.6em;
+      font-size: 1.5em;
       line-height: 1.8rem;
       margin: 0;
       margin-top: 1.4rem;
+      @include font('AvenirNext-Medium');
     }
   }
 }

@@ -34,3 +34,8 @@
     @content;
   }
 }
+
+/* mixin font type */
+@mixin font($font) {
+  font-family: $font, system-ui, -apple-system, sans-serif;
+}

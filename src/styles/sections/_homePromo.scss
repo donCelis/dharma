@@ -37,12 +37,15 @@
         margin: 0 auto;
       }
     }
-
+    h3 {
+      @include font('AvenirNext-UltraLight');
+    }
     .app_store {
       width: 9rem;
       margin: 0 auto;
     }
     p {
+      @include font('AvenirNext-UltraLight');
       font-size: 1.4em;
       @include mobile {
         br {

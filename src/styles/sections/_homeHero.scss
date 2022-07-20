@@ -45,13 +45,14 @@
       color: hsl(180, 3%, 68%);
       letter-spacing: 1px;
       margin-bottom: 1rem;
+      @include font('Avenir-Medium');
     }
     &_info {
       color: hsl(246, 33%, 33%);
-      letter-spacing: 0.5px;
+      letter-spacing: 0.4px;
       margin: 0;
-      font-weight: bold;
       font-size: 1.2em;
+      @include font('Avenir-Heavy');
     }
     &_app_store {
       margin: 3rem 0;
@@ -85,6 +86,7 @@
     small {
       letter-spacing: 0.5px;
       font-size: 0.9em;
+      @include font('Avenir-Light');
     }
     img {
       width: 8px;

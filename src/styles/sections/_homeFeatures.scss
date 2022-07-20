@@ -3,6 +3,7 @@
 .home_features {
   padding: 2rem 0 4rem;
   &_title {
+    @include font('Avenir-Heavy');
     text-decoration: underline;
     color: #6f7070;
     display: flex;
@@ -15,11 +16,12 @@
   }
   .features_item {
     text-align: center;
-    @include mobile{
+    @include mobile {
       width: 60%;
       margin: 0 auto;
     }
     .number {
+      @include font('PTSans-Caption');
       color: #9ed3e8;
       font-size: 1.6em;
       border: 2px solid #9ee8dd;
@@ -30,16 +32,20 @@
       min-height: 55px;
     }
     h5 {
+      @include font('PTSans-Caption');
       color: #9ed3e8;
       text-decoration: underline;
       font-size: 1.3em;
-      letter-spacing: 0.5px;
-      @include mobile{
+      letter-spacing: 0.15px;
+      margin-bottom: 0.8rem;
+      @include mobile {
         font-size: 1.1em;
       }
     }
     p {
+      @include font('PTSans-Regular');
       color: #959595;
+      font-size: 1.125em;
     }
   }
 }

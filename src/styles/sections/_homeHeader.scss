@@ -26,11 +26,11 @@
 .menu {
   display: inline-flex;
   gap: 2rem;
-  @include mobile{
+  @include mobile {
     display: none;
   }
   a {
     color: hsl(0, 0%, 100%);
-    font-weight: bold;
+    @include font('PTSans-CaptionBold');
   }
 }
