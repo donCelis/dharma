@@ -48,6 +48,9 @@ a {
 }
 .mod-gap {
   gap: 5rem;
+  @include desktop-md {
+    gap: 2rem;
+  }
   @include desktop-sm {
     gap: 0;
   }

@@ -8,8 +8,8 @@ export default function HomeFeatures() {
           <Image src='./images/icon_sun.svg' alt='' />
           DHARMA FEATURES
         </h3>
-        <div className='row pt-5'>
-          <aside className='col-6 col-md-6 col-lg-3'>
+        <div className='row gx-0 gx-lg-4 pt-5'>
+          <aside className='col-12 col-sm-6 col-md-6 col-lg-3'>
             <article className='features_item'>
               <p className='number'>1</p>
               <h5>Extensive Database</h5>
@@ -19,7 +19,7 @@ export default function HomeFeatures() {
               </figure>
             </article>
           </aside>
-          <aside className='col-6 col-md-6 col-lg-3'>
+          <aside className='col-12 col-sm-6 col-md-6 col-lg-3'>
             <article className='features_item'>
               <p className='number'>2</p>
               <h5>Flexible Session</h5>
@@ -29,7 +29,7 @@ export default function HomeFeatures() {
               </figure>
             </article>
           </aside>
-          <aside className='col-6 col-md-6 col-lg-3'>
+          <aside className='col-12 col-sm-6 col-md-6 col-lg-3'>
             <article className='features_item'>
               <p className='number'>3</p>
               <h5>Bilingual Energy Healers</h5>
@@ -39,7 +39,7 @@ export default function HomeFeatures() {
               </figure>
             </article>
           </aside>
-          <aside className='col-6 col-md-6 col-lg-3'>
+          <aside className='col-12 col-sm-6 col-md-6 col-lg-3'>
             <article className='features_item'>
               <p className='number'>4</p>
               <h5>Earn Rewards</h5>

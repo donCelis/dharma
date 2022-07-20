@@ -1,5 +1,7 @@
+@use '../partials/' as *;
+
 .home_features {
-  padding: 2rem 0;
+  padding: 2rem 0 4rem;
   &_title {
     text-decoration: underline;
     color: #6f7070;
@@ -13,6 +15,10 @@
   }
   .features_item {
     text-align: center;
+    @include mobile{
+      width: 60%;
+      margin: 0 auto;
+    }
     .number {
       color: #9ed3e8;
       font-size: 1.6em;
@@ -26,6 +32,11 @@
     h5 {
       color: #9ed3e8;
       text-decoration: underline;
+      font-size: 1.3em;
+      letter-spacing: 0.5px;
+      @include mobile{
+        font-size: 1.1em;
+      }
     }
     p {
       color: #959595;

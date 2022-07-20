@@ -3,11 +3,6 @@
 .home_discover {
   background: #dae2f23e;
   padding: 2rem 0 3.5rem;
-  @media (min-width: 992px) {
-    .gx-md-5 {
-      --bs-gutter-x: 6rem;
-    }
-  }
   .hide {
     @include tablet {
       display: none;
@@ -29,11 +24,26 @@
     p {
       margin: 0;
       margin-top: 1rem;
-      font-size: 20px;
+      font-size: 1.35em;
       strong {
         font-family: 'Avenir Next', sans-serif;
         color: #737c7c;
       }
+    }
+  }
+  .discover_list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 7rem;
+    @include desktop-sm {
+      gap: 4rem;
+    }
+    @include tablet {
+      gap: 3rem;
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include mobile {
+      grid-template-columns: 1fr;
     }
   }
   .discover_item {
@@ -42,9 +52,12 @@
     border: #86c7e2 solid 2px;
     background: #f4f7ff;
     border-radius: 8px;
-    @include tablet {
-      width: 50%;
-      margin: 0 auto;
+    &:last-child {
+      @include tablet {
+        grid-column: 1/-1;
+        width: 50%;
+        margin: 0 auto;
+      }
     }
     @include mobile {
       width: 60%;
@@ -55,7 +68,7 @@
     }
     p {
       color: #85c8e2;
-      font-size: 24px;
+      font-size: 1.6em;
       line-height: 1.8rem;
       margin: 0;
       margin-top: 1.4rem;

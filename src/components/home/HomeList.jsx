@@ -4,7 +4,7 @@ export default function HomeList() {
   return (
     <section className='home_list'>
       <div className='container mod_container'>
-        <section className='d-flex align-items-center mod-gap'>
+        <section className='home_list_grid mod-gap'>
           <aside className='image'>
             <Image src='./images/plant_left.svg' alt='' />
           </aside>
