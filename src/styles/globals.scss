@@ -1,5 +1,8 @@
 @use './format';
 
+//components
+@use './components/menuOpen';
+
 /* pages */
 // home
 @use './sections/homeHeader';

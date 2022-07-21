@@ -1,10 +1,12 @@
 import Link from 'next/link';
+import { useAppContext } from 'src/context';
 
 export default function HomeHeader() {
+  const { handleOpen } = useAppContext();
   return (
     <header className='home_header'>
       <div className='container'>
-        <figure className='mb-0'>
+        <figure onClick={handleOpen} className='mb-0'>
           <img src='./images/icon_menu.svg' alt='icon menu' />
         </figure>
         <nav className='menu'>

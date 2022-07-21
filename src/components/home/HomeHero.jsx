@@ -1,4 +1,5 @@
-import Image from '../Image';
+import Slide from '../common/Slide';
+import Image from '../common/Image';
 
 export default function HomeHero() {
   return (
@@ -14,7 +15,7 @@ export default function HomeHero() {
                 bilingual energy healers.
               </p>
               <Image className='hero_app_store' src='./images/app_store.svg' alt='Appstore' />
-              <div className='hero_slider' />
+              <Slide />
             </article>
           </aside>
           <aside className='col-12 col-md-6 d-md-block d-none'>

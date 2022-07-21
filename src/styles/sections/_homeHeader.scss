@@ -22,15 +22,15 @@
       height: 12px;
     }
   }
-}
-.menu {
-  display: inline-flex;
-  gap: 2rem;
-  @include mobile {
-    display: none;
-  }
-  a {
-    color: hsl(0, 0%, 100%);
-    @include font('PTSans-CaptionBold');
+  .menu {
+    display: inline-flex;
+    gap: 2rem;
+    @include mobile {
+      display: none;
+    }
+    a {
+      color: hsl(0, 0%, 100%);
+      @include font('PTSans-CaptionBold');
+    }
   }
 }

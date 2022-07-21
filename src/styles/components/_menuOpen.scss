@@ -1,0 +1,64 @@
+@use '../partials/' as *;
+
+.menu_open {
+  width: 100%;
+  height: 100%;
+  background: rgba(56, 56, 56, 0.6);
+  backdrop-filter: blur(12px);
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  display: grid;
+  place-content: center;
+  .btn_close{
+    background: transparent;
+    border: 0;
+    display: inline-block;
+    position: absolute;
+    left: 2.5rem;
+    top: 2rem;
+    img{
+      width: 1.6rem;
+      height: 1.6rem;
+    }
+  }
+  .container {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .app_store {
+    margin: 0;
+    text-align: center;
+    img {
+      width: 8rem;
+      margin: 0 auto;
+    }
+  }
+  &_nav {
+    display: grid;
+    text-align: center;
+    gap: 0.5rem;
+    a {
+      @include font('Avenir-Medium');
+      font-size: 1.7em;
+      color: #ffffff;
+      &:hover {
+        color: #ffffff;
+      }
+    }
+  }
+  &_footer {
+    text-align: center;
+    color: #ffffff;
+    img {
+      width: 2rem;
+    }
+    p {
+      margin: 0;
+    }
+  }
+}

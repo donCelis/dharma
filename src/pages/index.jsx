@@ -7,14 +7,21 @@ import HomeList from 'src/components/home/HomeList';
 import HomeFeatures from 'src/components/home/HomeFeatures';
 import HomePromo from 'src/components/home/HomePromo';
 import Footer from 'src/components/Footer';
+import MenuOpen from 'src/components/MenuOpen';
+import { useAppContext } from 'src/context';
+import { AnimatePresence } from 'framer-motion';
+
+const data_head = {
+  title: 'Index page',
+  description: 'Texto de prueba',
+};
 
 export default function Home() {
-  const data_head = {
-    title: 'Index page',
-    description: 'Texto de prueba',
-  };
+  const { isOpen } = useAppContext();
+
   return (
     <Page {...data_head}>
+      <AnimatePresence>{isOpen && <MenuOpen />}</AnimatePresence>
       <HomeHeader />
       <HomeHero />
       <HomeDiscover />
