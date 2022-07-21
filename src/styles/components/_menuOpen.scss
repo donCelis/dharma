@@ -18,6 +18,11 @@
     position: absolute;
     left: 2.5rem;
     top: 2rem;
+    z-index: 100;
+    @include mobile{
+      top: 0.8rem;
+      left: 0.8rem;
+    }
     img {
       width: 1.6rem;
       height: 1.6rem;
@@ -29,6 +34,10 @@
     align-items: center;
     justify-content: center;
     height: 100%;
+    @include mobile{
+      align-items: flex-start;
+      padding-top: 4rem;
+    }
   }
   .mobile {
     display: grid;
@@ -46,7 +55,8 @@
     display: grid;
     text-align: center;
     gap: 0.5rem;
-    a, button {
+    a,
+    button {
       @include font('Avenir-Medium');
       font-size: 1.7em;
       color: #ffffff;
