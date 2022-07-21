@@ -28,9 +28,14 @@
     @include mobile {
       display: none;
     }
-    a {
+    &_link {
       color: hsl(0, 0%, 100%);
       @include font('PTSans-CaptionBold');
+    }
+    .contact {
+      border: 0;
+      background: transparent;
+      @extend .menu_link;
     }
   }
 }

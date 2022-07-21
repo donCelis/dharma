@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { useAppContext } from 'src/context';
 
 export default function HomeHeader() {
-  const { handleOpen } = useAppContext();
+  const { handleOpen, handleContact } = useAppContext();
   return (
     <header className='home_header'>
       <div className='container'>
@@ -11,14 +11,14 @@ export default function HomeHeader() {
         </figure>
         <nav className='menu'>
           <Link href={'/'}>
-            <a>Privacy Policy</a>
+            <a className='menu_link'>Privacy Policy</a>
           </Link>
           <Link href={'/'}>
-            <a>Terms of Use</a>
+            <a className='menu_link'>Terms of Use</a>
           </Link>
-          <Link href={'/'}>
-            <a>Contact Us</a>
-          </Link>
+          <button onClick={handleContact} className='contact'>
+            Contact Us
+          </button>
         </nav>
       </div>
     </header>

@@ -1,0 +1,60 @@
+.contact_us {
+  background: white;
+  border-radius: 5px;
+  width: 45rem;
+  padding: 2em;
+  text-align: center;
+  box-shadow: -14px 19px 42px #0000002e;
+  .form_body {
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+    padding: 1.5rem 0;
+    width: 70%;
+    margin: 0 auto;
+    h3 {
+      margin: 0;
+      font-weight: bold;
+      border-bottom: 3px solid black;
+      padding: 0.4rem;
+    }
+    .form_group {
+      input,
+      label,
+      textarea {
+        display: block;
+        width: 100%;
+        text-align: left;
+      }
+      input,
+      textarea {
+        border: 0;
+        border-bottom: 1px solid black;
+      }
+      label {
+        font-weight: bold;
+        font-size: 1.2em;
+        margin-bottom: 0.2rem;
+      }
+      input {
+        padding-bottom: 0.4rem;
+        &::placeholder {
+          color: black;
+        }
+      }
+      textarea {
+        height: 5rem;
+      }
+    }
+  }
+  &_btn {
+    color: white;
+    background: linear-gradient(125deg, #4b73c4 0%, #64c0cd 66%, #78ffd5 100%);
+    border: 0;
+    margin: 0 auto;
+    padding: 0.8rem 0;
+    width: 14rem;
+    border-radius: 5px;
+    box-shadow: -12px 8px 40px #4b73c47d;
+  }
+}
