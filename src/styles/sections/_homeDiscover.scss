@@ -93,6 +93,7 @@
       background: #dbf7f134;
     }
     &.back {
+      overflow: hidden;
       padding: 1.5rem;
       display: grid;
       place-content: center;

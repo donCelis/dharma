@@ -10,11 +10,17 @@ function AppProvider({ children }) {
 
   const handleContact = () => setIsOpenContact(!isOpenContact);
 
+  const handleCloseAll = () => {
+    setIsOpen(false);
+    setIsOpenContact(false);
+  };
+
   const initialValues = {
     isOpen,
     handleOpen,
     isOpenContact,
     handleContact,
+    handleCloseAll
   };
 
   return <AppContext.Provider value={initialValues}>{children}</AppContext.Provider>;

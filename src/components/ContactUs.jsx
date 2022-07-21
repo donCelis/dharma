@@ -23,7 +23,7 @@ export default function ContactUs() {
         <h3>Contact Us</h3>
         <div className='form_group'>
           <label htmlFor=''>Name</label>
-          <input ref={nameRef} type='text' placeholder='Write your name' required autoFocus />
+          <input ref={nameRef} type='text' placeholder='Write your name' required />
         </div>
         <div className='form_group'>
           <label htmlFor=''>Email</label>

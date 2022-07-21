@@ -1,3 +1,5 @@
+import { AnimatePresence } from 'framer-motion';
+
 // layout
 import Page from 'src/components/Page';
 import HomeHeader from 'src/components/home/HomeHeader';
@@ -7,11 +9,14 @@ import HomeList from 'src/components/home/HomeList';
 import HomeFeatures from 'src/components/home/HomeFeatures';
 import HomePromo from 'src/components/home/HomePromo';
 import Footer from 'src/components/Footer';
-import MenuOpen from 'src/components/common/MenuOpen';
-import { useAppContext } from 'src/context';
-import { AnimatePresence } from 'framer-motion';
+
+// components
 import MenuMobile from 'src/components/MenuMobile';
 import ContactUs from 'src/components/ContactUs';
+import MenuOpen from 'src/components/common/MenuOpen';
+
+//context
+import { useAppContext } from 'src/context';
 
 const data_head = {
   title: 'Index page',
@@ -19,18 +24,18 @@ const data_head = {
 };
 
 export default function Home() {
-  const { isOpen, handleOpen, isOpenContact, handleContact } = useAppContext();
+  const { isOpen, isOpenContact } = useAppContext();
 
   return (
     <Page {...data_head}>
-      <AnimatePresence exitBeforeEnter>
+      <AnimatePresence exitBeforeEnter initial={false}>
         {isOpen && (
-          <MenuOpen state={isOpen} onState={handleOpen}>
+          <MenuOpen state={isOpen}>
             <MenuMobile />
           </MenuOpen>
         )}
         {isOpenContact && (
-          <MenuOpen state={isOpenContact} onState={handleContact}>
+          <MenuOpen state={isOpenContact}>
             <ContactUs />
           </MenuOpen>
         )}

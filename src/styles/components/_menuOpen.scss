@@ -11,23 +11,27 @@
   right: 0;
   bottom: 0;
   z-index: 9999;
-  display: grid;
-  place-content: center;
-  .btn_close{
+  .btn_close {
     background: transparent;
     border: 0;
     display: inline-block;
     position: absolute;
     left: 2.5rem;
     top: 2rem;
-    img{
+    img {
       width: 1.6rem;
       height: 1.6rem;
     }
   }
   .container {
-    display: inline-flex;
-    flex-direction: column;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  .mobile {
+    display: grid;
     gap: 3rem;
   }
   .app_store {
@@ -42,7 +46,7 @@
     display: grid;
     text-align: center;
     gap: 0.5rem;
-    a {
+    a, button {
       @include font('Avenir-Medium');
       font-size: 1.7em;
       color: #ffffff;

@@ -1,6 +1,8 @@
+import { useAppContext } from 'src/context';
 import Image from './common/Image';
 
 export default function Footer() {
+  const { handleContact } = useAppContext();
   return (
     <footer>
       <div className='container mod_container'>
@@ -13,7 +15,7 @@ export default function Footer() {
               <a href='#'>Terms & Conditions</a>
             </li>
             <li>
-              <a href='#'>Contact Us</a>
+              <button onClick={handleContact}>Contact Us</button>
             </li>
           </ul>
         </div>
