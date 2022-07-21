@@ -17,6 +17,13 @@
   figure {
     cursor: pointer;
     display: inline-flex;
+    transform: scale(1);
+    transition: transform ease-in-out 0.2s;
+    padding: 0.35rem;
+    transform-origin: center;
+    &:hover {
+      transform: scale(1.2);
+    }
     img {
       width: 25px;
       height: 12px;
@@ -31,6 +38,12 @@
     &_link {
       color: hsl(0, 0%, 100%);
       @include font('PTSans-CaptionBold');
+      transform: translateY(0);
+      transition: transform ease-in-out 0.2s;
+      padding: 0.35rem;
+      &:hover {
+        transform: translateY(-5px);
+      }
     }
     .contact {
       border: 0;

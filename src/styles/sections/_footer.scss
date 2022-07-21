@@ -33,6 +33,12 @@ footer {
     background: #f7f7f7;
     margin: 0;
     list-style-position: inside;
+    a:visited,
+    a:hover,
+    button:visited,
+    button:hover {
+      color: #101217;
+    }
     @include mobile {
       flex-direction: column;
       justify-content: flex-start;
@@ -42,7 +48,7 @@ footer {
   .pinterest {
     margin: 0.4rem auto;
     width: 26px;
-    @include mobile{
+    @include mobile {
       margin: 2rem auto;
     }
   }
