@@ -1,4 +1,5 @@
 import 'bootstrap/scss/bootstrap.scss';
+import 'react-lazy-load-image-component/src/effects/opacity.css';
 import 'nprogress/nprogress.css';
 import 'src/styles/globals.scss';
 

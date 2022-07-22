@@ -10,7 +10,7 @@ export default function HomeList() {
           </aside>
           <article>
             <h3 className='home_list_title'>
-              <Image src='./images/icon_stars.svg' alt='' />
+              <Image visibleByDefault src='./images/icon_stars.svg' alt='' />
               HEAL YOUR ENERGY TODAY
             </h3>
             <ul>

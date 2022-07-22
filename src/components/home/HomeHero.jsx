@@ -26,7 +26,7 @@ export default function HomeHero() {
         </div>
         <button className='scroll_down'>
           <small>SCROLL DOWN</small>
-          <Image src='./images/icon_down.svg' alt='icon down' />
+          <Image visibleByDefault src='./images/icon_down.svg' alt='icon down' />
         </button>
       </div>
     </section>

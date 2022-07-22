@@ -5,7 +5,7 @@ export default function HomeFeatures() {
     <section className='home_features'>
       <div className='container'>
         <h3 className='home_features_title'>
-          <Image src='./images/icon_sun.svg' alt='' />
+          <Image visibleByDefault src='./images/icon_sun.svg' alt='' />
           DHARMA FEATURES
         </h3>
         <div className='row gx-0 gx-lg-4 pt-5'>

@@ -66,7 +66,7 @@ export default function Faqs() {
       <Header>
         <Link href='/'>
           <a className='icon_back'>
-            <Image src='./images/icon_back.svg' alt='' />
+            <Image visibleByDefault src='./images/icon_back.svg' alt='' />
           </a>
         </Link>
         <figure className='app_store app_store_min'>

@@ -6,13 +6,13 @@ export default function HomeDiscover() {
       <div className='container mod_container'>
         <section className='d-flex gap-2'>
           <aside className='hide'>
-            <img className='icon' src='./images/highlight.svg' alt='' />
+            <Image visibleByDefault className='icon' src='./images/highlight.svg' alt='' />
           </aside>
           <aside>
             <article className='home_discover_info'>
               <div className='d-flex'>
                 <figure className='m-0'>
-                  <img className='icon view' src='./images/highlight.svg' alt='' />
+                  <Image className='icon view' src='./images/highlight.svg' alt='' />
                 </figure>
                 <h3 className='m-0'>DISCOVER</h3>
               </div>
