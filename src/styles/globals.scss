@@ -1,15 +1,8 @@
 @use './format';
 
 //components
-@use './components/menuOpen';
-@use './components/contactUs';
+@use './components';
 
 /* pages */
-// home
-@use './sections/homeHeader';
-@use './sections/homeHero';
-@use './sections/homeDiscover';
-@use './sections/homeList';
-@use './sections/homeFeatures';
-@use './sections/homePromo';
-@use './sections/footer';
+@use './sections/home';
+@use './sections/faqs';

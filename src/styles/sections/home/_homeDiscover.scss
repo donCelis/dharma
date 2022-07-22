@@ -1,4 +1,4 @@
-@use '../partials/' as *;
+@use '../../partials' as *;
 
 .home_discover {
   background: #dae2f23e;
@@ -125,12 +125,27 @@
         text-decoration: underline;
       }
       ul {
-        padding-inline-start: 0;
+        padding-left: 14px;
         margin: 0;
-        list-style-position: inside;
         font-weight: 100;
+        list-style: none;
         li {
+          position: relative;
           font-size: 0.8em;
+          &::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: -0.9rem;
+            min-width: 0.7rem;
+            min-height: 0.7rem;
+            /* background-color: #6f7070; */
+            background-color: #77d478;
+            mask-image: url('/images/check-all.svg');
+            mask-size: cover;
+            mask-repeat: no-repeat;
+          }
         }
       }
     }

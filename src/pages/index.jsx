@@ -12,6 +12,7 @@ import Footer from 'src/components/Footer';
 
 // components
 import MenuMobile from 'src/components/MenuMobile';
+import Header from 'src/components/Header';
 import ContactUs from 'src/components/ContactUs';
 import MenuOpen from 'src/components/common/MenuOpen';
 
@@ -40,7 +41,9 @@ export default function Home() {
           </MenuOpen>
         )}
       </AnimatePresence>
-      <HomeHeader />
+      <Header>
+        <HomeHeader />
+      </Header>
       <HomeHero />
       <HomeDiscover />
       <HomeList />

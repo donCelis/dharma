@@ -1,8 +1,9 @@
-@use '../partials/' as *;
+@use '../partials' as *;
 
 footer {
   text-align: center;
   padding-bottom: 2rem;
+  @include font('PTSerif-Regular');
   .middle {
     display: flex;
     place-content: center;
@@ -38,8 +39,8 @@ footer {
       flex-direction: column;
       justify-content: flex-start;
       text-align: left;
-      li{
-       text-align: center; 
+      li {
+        text-align: center;
       }
     }
     a:visited,
@@ -55,5 +56,9 @@ footer {
     @include mobile {
       margin: 2rem auto;
     }
+  }
+  .name-logo {
+    font-weight: bold;
+    font-size: 1.125em;
   }
 }

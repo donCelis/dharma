@@ -20,7 +20,7 @@ export default function Footer() {
           </ul>
         </div>
         <Image className='pinterest' src='./images/pinterest.svg' alt='pinterest' />
-        <p className='m-0'>© Dharma 2022</p>
+        <p className='m-0 name-logo'>© Dharma 2022</p>
       </div>
     </footer>
   );

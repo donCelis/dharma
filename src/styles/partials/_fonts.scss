@@ -1,5 +1,12 @@
 /* fonts types */
 
+/* PTSerif */
+@font-face {
+  font-family: 'PTSerif-Regular';
+  src: url('/fonts/PTSerif/PTSerif-Regular.ttf');
+  font-display: swap;
+}
+
 /* PTSans */
 @font-face {
   font-family: 'PTSans-Regular';

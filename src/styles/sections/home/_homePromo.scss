@@ -1,4 +1,4 @@
-@use '../partials/' as *;
+@use '../../partials' as *;
 
 .home_promo {
   &_info {
@@ -8,8 +8,12 @@
     text-align: center;
     padding: 6rem 0 3rem;
     gap: 2rem;
-    figure {
+    .promo_logo {
       position: relative;
+      img {
+        width: 9rem;
+        margin: 0 auto;
+      }
       &::before,
       &::after {
         content: '';
@@ -40,20 +44,12 @@
           right: 0;
         }
       }
-      .logo_promo {
-        width: 9rem;
-        margin: 0 auto;
-      }
     }
     h3 {
       @include font('AvenirNext-UltraLight');
-      @include mobile{
+      @include mobile {
         margin-top: 1.5rem;
       }
-    }
-    .app_store {
-      width: 9rem;
-      margin: 0 auto;
     }
     p {
       @include font('AvenirNext-UltraLight');

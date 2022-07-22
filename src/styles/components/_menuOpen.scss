@@ -1,4 +1,4 @@
-@use '../partials/' as *;
+@use '../partials' as *;
 
 .menu_open {
   width: 100%;
@@ -19,7 +19,7 @@
     left: 2.5rem;
     top: 2rem;
     z-index: 100;
-    @include mobile{
+    @include mobile {
       top: 0.8rem;
       left: 0.8rem;
     }
@@ -34,7 +34,7 @@
     align-items: center;
     justify-content: center;
     height: 100%;
-    @include mobile{
+    @include mobile {
       align-items: flex-start;
       padding-top: 4rem;
     }
@@ -42,14 +42,6 @@
   .mobile {
     display: grid;
     gap: 3rem;
-  }
-  .app_store {
-    margin: 0;
-    text-align: center;
-    img {
-      width: 8rem;
-      margin: 0 auto;
-    }
   }
   &_nav {
     display: grid;
