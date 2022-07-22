@@ -5,8 +5,19 @@ function Page({ title, description, children }) {
     <>
       <Head>
         <title>{title}</title>
+        <meta name='title' content='' />
         <meta name='description' content={description} />
-        <link rel='icon' href='./images/favicon.ico' />
+        <meta name='keywords' content='' />
+
+        <meta name='twitter:card' content='summary_large_image' />
+
+        <meta name='twitter:title' content='Title of your page' />
+        <meta name='twitter:description' content='Your description here' />
+
+        <meta property='og:type' content='website' />
+
+        <meta property='og:title' content='ENTER PAGE TITLE' />
+        <meta property='og:description' content='ENTER YOUR PAGE DESCRIPTION' />
       </Head>
       {children}
     </>

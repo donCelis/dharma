@@ -8,18 +8,49 @@ import { AppProvider } from 'src/context';
 import { Router } from 'next/router';
 import nProgress from 'nprogress';
 
+import Favicons from 'src/components/common/Favicons';
+import MinMotion from 'src/components/common/MinMotion';
+import { AnimatePresence, m } from 'framer-motion';
+
 Router.events.on('routeChangeStart', () => nProgress.start());
 Router.events.on('routeChangeComplete', () => nProgress.done());
 Router.events.on('routeChangeError', () => nProgress.done());
 
-function MyApp({ Component, pageProps }) {
+const variants = {
+  initial: {
+    opacity: 0,
+  },
+  animate: {
+    opacity: 1,
+  },
+};
+
+function MyApp({ Component, pageProps, router }) {
   return (
     <>
       <Head>
         <meta name='viewport' content='initial-scale=1, width=device-width' />
+        <meta name='language' content='' />
+        <meta name='author' content='' />
+        <meta name='copyright' content='' />
+        <meta name='robots' content='' />
+
+        <meta name='twitter:url' content='URL of your page' />
+        <meta name='twitter:image' content='URL of image' />
+
+        <meta property='og:url' content='ENTER PAGE URL' />
+        <meta property='og:image' content='URL OF IMAGE' />
+
+        <Favicons />
       </Head>
       <AppProvider>
-        <Component {...pageProps} />
+        <AnimatePresence>
+          <MinMotion>
+            <m.main variants={variants} animate='animate' initial='initial' exit='initial' key={router.route}>
+              <Component {...pageProps} />
+            </m.main>
+          </MinMotion>
+        </AnimatePresence>
       </AppProvider>
     </>
   );
