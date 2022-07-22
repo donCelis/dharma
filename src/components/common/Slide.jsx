@@ -1,5 +1,6 @@
-import { motion } from 'framer-motion';
+import { m } from 'framer-motion';
 import { useRef } from 'react';
+import MinMotion from './MinMotion';
 
 export default function Slide() {
   const limitRef = useRef(null);
@@ -9,15 +10,17 @@ export default function Slide() {
   };
 
   return (
-    <motion.div ref={limitRef} className='hero_slider'>
-      <motion.div
-        className='cube'
-        drag='x'
-        dragConstraints={limitRef}
-        onDragEnd={handleDrag}
-        dragElastic={false}
-        dragMomentum={false}
-      />
-    </motion.div>
+    <MinMotion>
+      <m.div ref={limitRef} className='hero_slider'>
+        <m.div
+          className='cube'
+          drag='x'
+          dragConstraints={limitRef}
+          onDragEnd={handleDrag}
+          dragElastic={false}
+          dragMomentum={false}
+        />
+      </m.div>
+    </MinMotion>
   );
 }
