@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Image from 'src/components/common/Image';
+import Footer from 'src/components/Footer';
 import Header from 'src/components/Header';
 import Page from '../components/Page';
 
@@ -16,13 +17,17 @@ export default function Faqs() {
             <Image src='./images/icon_back.svg' alt='' />
           </a>
         </Link>
-        <figure className='app_store'>
+        <figure className='app_store app_store_min'>
           <Image src='./images/app_store_big.svg' alt='' />
         </figure>
       </Header>
-      <section className='container'>
-        <p>Faqs</p>
+      <section className='faqs'>
+        <div className='container'>
+          <h4>Frequently Asked Questions</h4>
+          <p>Faqs</p>
+        </div>
       </section>
+      <Footer />
     </Page>
   );
 }
