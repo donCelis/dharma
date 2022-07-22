@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="38" height="38" viewBox="0 0 38 38">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.246" y1="0.125" x2="0.724" y2="0.884" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#4b73c4"/>
+      <stop offset="0.668" stop-color="#64c0cd"/>
+      <stop offset="1" stop-color="#78ffd5"/>
+    </linearGradient>
+  </defs>
+  <g id="Close_icon_" data-name="Close icon " transform="translate(-538 -365)">
+    <circle id="Elipse_27" data-name="Elipse 27" cx="19" cy="19" r="19" transform="translate(538 365)" fill="url(#linear-gradient)"/>
+    <circle id="Elipse_28" data-name="Elipse 28" cx="15.185" cy="15.185" r="15.185" transform="translate(541.417 368.417)" fill="#f7f7f7"/>
+    <line id="Línea_38" data-name="Línea 38" x2="16.414" transform="translate(548.259 383.466)" fill="none" stroke="#75f5d4" stroke-width="3"/>
+    <line id="Línea_39" data-name="Línea 39" y2="15.046" transform="translate(556.466 375.943)" fill="none" stroke="#75f5d4" stroke-width="3"/>
+  </g>
+</svg>

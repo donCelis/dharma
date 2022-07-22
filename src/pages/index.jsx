@@ -1,5 +1,3 @@
-import { AnimatePresence } from 'framer-motion';
-
 // layout
 import Page from 'src/components/Page';
 import HomeHeader from 'src/components/home/HomeHeader';
@@ -29,18 +27,12 @@ export default function Home() {
 
   return (
     <Page {...data_head}>
-      <AnimatePresence exitBeforeEnter initial={false}>
-        {isOpen && (
-          <MenuOpen state={isOpen}>
-            <MenuMobile />
-          </MenuOpen>
-        )}
-        {isOpenContact && (
-          <MenuOpen state={isOpenContact}>
-            <ContactUs />
-          </MenuOpen>
-        )}
-      </AnimatePresence>
+      <MenuOpen isVisible={isOpen}>
+        <MenuMobile />
+      </MenuOpen>
+      <MenuOpen isVisible={isOpenContact}>
+        <ContactUs />
+      </MenuOpen>
       <Header>
         <HomeHeader />
       </Header>

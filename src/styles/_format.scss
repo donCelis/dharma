@@ -21,6 +21,11 @@ button {
 }
 
 /* general styles */
+@include mobile {
+  .container {
+    width: 90%;
+  }
+}
 .mod_container {
   width: 75%;
   max-width: 1440px;
