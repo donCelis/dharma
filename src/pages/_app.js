@@ -1,6 +1,6 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/scss/bootstrap.scss';
 import 'nprogress/nprogress.css';
-import '../styles/globals.scss';
+import 'src/styles/globals.scss';
 
 import Head from 'next/head';
 import { AppProvider } from 'src/context';
