@@ -7,6 +7,18 @@
   font-display: swap;
 }
 
+/* HoeflerText */
+@font-face {
+  font-family: 'HoeflerText-Regular';
+  src: url('/fonts/HoeflerText/HoeflerText-Regular.ttf');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'HoeflerText-Black';
+  src: url('/fonts/HoeflerText/HoeflerText-Black.ttf');
+  font-display: swap;
+}
+
 /* PTSans */
 @font-face {
   font-family: 'PTSans-Regular';

@@ -12,9 +12,11 @@ export default function MenuMobile() {
 
   return (
     <div className='mobile'>
-      <figure className='app_store'>
-        <img src='./images/app_store_big.svg' alt='app store' />
-      </figure>
+      <div>
+        <a className='app_store' href='#'>
+          <img src='./images/app_store_big.svg' alt='app store' />
+        </a>
+      </div>
       <nav className='menu_open_nav'>
         {menuLinks.map((item, index) => (
           <Link key={index} href={item.to}>

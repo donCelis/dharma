@@ -40,8 +40,10 @@
     }
   }
   .mobile {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     gap: 3rem;
+    align-items: center;
   }
   &_nav {
     display: grid;

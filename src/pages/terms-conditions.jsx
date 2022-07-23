@@ -2,7 +2,7 @@ import BigContent from 'src/layout/BigContent';
 
 export default function TermsConditions() {
   const data_head = {
-    title: 'Terms & Conditions',
+    title: 'Terms & Conditions | Dharma App',
     description: 'Texto de prueba',
   };
 

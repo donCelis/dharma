@@ -2,7 +2,7 @@ import BigContent from 'src/layout/BigContent';
 
 export default function Privacy() {
   const data_head = {
-    title: 'Privacy Policy',
+    title: 'Privacy Policy | Dharma App',
     description: 'Texto de prueba',
   };
 

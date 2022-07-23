@@ -11,9 +11,11 @@ export default function BigContent({ children, data_head }) {
             <img src='./images/icon_back_b.svg' alt='' />
           </a>
         </Link>
-        <figure className='app_store app_store_min'>
-          <img src='./images/app_store_big.svg' alt='' />
-        </figure>
+        <a href='#'>
+          <figure className='app_store app_store_min'>
+            <img src='./images/app_store_big.svg' alt='' />
+          </figure>
+        </a>
       </header>
       <section className='container text-center'>
         <img width='150px' src='./images/dharma.svg' alt='' />

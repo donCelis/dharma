@@ -7,9 +7,11 @@ export default function Promo() {
             <img src='./images/dharma_promo.svg' alt='' />
           </figure>
           <h3>Find Healers Now!</h3>
-          <figure className='app_store'>
-            <img src='./images/app_store_big.svg' alt='' />
-          </figure>
+          <div>
+            <a className='app_store' href='#'>
+              <img src='./images/app_store_big.svg' alt='' />
+            </a>
+          </div>
           <p>
             Download today and receive 20% <br /> off your first booked session
           </p>

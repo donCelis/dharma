@@ -75,10 +75,13 @@
       @include font('Avenir-Heavy');
     }
     &_app_store {
+      display: inline-block;
       margin: 3rem 0;
-      width: 7.5rem;
-      @include mobile {
-        width: 8.75rem;
+      img {
+        width: 7.5rem;
+        @include mobile {
+          width: 8.75rem;
+        }
       }
     }
     &_phone {

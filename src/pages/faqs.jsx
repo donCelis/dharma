@@ -5,7 +5,7 @@ import Page from '../layout/Page';
 
 export default function Faqs() {
   const data_head = {
-    title: 'FAQS',
+    title: 'FAQS | Dharma App',
     description: 'Texto de prueba',
   };
 
@@ -67,9 +67,11 @@ export default function Faqs() {
             <img src='./images/icon_back.svg' alt='' />
           </a>
         </Link>
-        <figure className='app_store app_store_min'>
-          <img src='./images/app_store_big.svg' alt='' />
-        </figure>
+        <a href='#'>
+          <figure className='app_store app_store_min'>
+            <img src='./images/app_store_big.svg' alt='' />
+          </figure>
+        </a>
       </Header>
       <section className='faqs'>
         <div className='container'>

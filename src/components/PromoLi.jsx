@@ -7,9 +7,11 @@ export default function PromoLi() {
             <img src='./images/dharma_promo.svg' alt='' />
           </figure>
           <h4>Find Healers Now!</h4>
-          <figure className='app_store'>
-            <img src='./images/app_store_big.svg' alt='' />
-          </figure>
+          <div>
+            <a className='app_store' href='#'>
+              <img src='./images/app_store_big.svg' alt='' />
+            </a>
+          </div>
         </article>
       </div>
     </section>
