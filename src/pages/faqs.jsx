@@ -1,8 +1,8 @@
 import Link from 'next/link';
 import Answer from 'src/components/common/Answer';
 import Image from 'src/components/common/Image';
-import Header from 'src/components/Header';
-import Page from '../components/Page';
+import Header from 'src/components/common/Header';
+import Page from '../layout/Page';
 
 export default function Faqs() {
   const data_head = {

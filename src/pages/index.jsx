@@ -1,5 +1,5 @@
 // layout
-import Page from 'src/components/Page';
+import Page from 'src/layout/Page';
 import HomeHeader from 'src/components/home/HomeHeader';
 import HomeHero from 'src/components/home/HomeHero';
 import HomeDiscover from 'src/components/home/HomeDiscover';
@@ -9,8 +9,7 @@ import Promo from 'src/components/Promo';
 
 // components
 import MenuMobile from 'src/components/MenuMobile';
-import Header from 'src/components/Header';
-import ContactUs from 'src/components/ContactUs';
+import Header from 'src/components/common/Header';
 import MenuOpen from 'src/components/common/MenuOpen';
 
 //context
@@ -22,15 +21,12 @@ const data_head = {
 };
 
 export default function Home() {
-  const { isOpen, isOpenContact } = useAppContext();
+  const { isOpen } = useAppContext();
 
   return (
     <Page {...data_head}>
       <MenuOpen isVisible={isOpen}>
         <MenuMobile />
-      </MenuOpen>
-      <MenuOpen isVisible={isOpenContact}>
-        <ContactUs />
       </MenuOpen>
       <Header>
         <HomeHeader />

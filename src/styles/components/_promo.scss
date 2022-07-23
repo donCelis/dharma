@@ -1,4 +1,4 @@
-@use '../../partials' as *;
+@use '../partials' as *;
 
 .home_promo {
   &_info {
@@ -58,6 +58,26 @@
         br {
           display: none;
         }
+      }
+    }
+  }
+}
+
+.home_promo_li {
+  .article_mod {
+    @extend .home_promo_info;
+    border-top: 0;
+    gap: 0.8rem;
+    .promo_logo_li {
+      img {
+        width: 9rem;
+        margin: 0 auto;
+      }
+    }
+    h4 {
+      @include font('AvenirNext-Regular');
+      @include mobile {
+        margin-top: 1.5rem;
       }
     }
   }

@@ -7,8 +7,8 @@ export default function MenuMobile() {
 
   const menuLinks = [
     { name: 'FAQs', to: '/faqs' },
-    { name: 'Privacy Policy', to: '' },
-    { name: 'Terms & Conditions', to: '' },
+    { name: 'Privacy Policy', to: '/privacy-policy' },
+    { name: 'Terms & Conditions', to: '/terms-conditions' },
   ];
 
   return (

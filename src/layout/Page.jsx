@@ -1,7 +1,11 @@
 import Head from 'next/head';
-import Footer from './Footer';
+import MenuOpen from 'src/components/common/MenuOpen';
+import ContactUs from 'src/components/ContactUs';
+import { useAppContext } from 'src/context';
+import Footer from '../components/Footer';
 
 function Page({ title, description, children }) {
+  const { isOpenContact } = useAppContext();
   return (
     <>
       <Head>
@@ -20,6 +24,9 @@ function Page({ title, description, children }) {
         <meta property='og:title' content='ENTER PAGE TITLE' />
         <meta property='og:description' content='ENTER YOUR PAGE DESCRIPTION' />
       </Head>
+      <MenuOpen isVisible={isOpenContact}>
+        <ContactUs />
+      </MenuOpen>
       {children}
       <Footer />
     </>

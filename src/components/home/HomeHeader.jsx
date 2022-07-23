@@ -13,7 +13,7 @@ export default function HomeHeader() {
         <Link href={'/privacy-policy'}>
           <a className='menu_link'>Privacy Policy</a>
         </Link>
-        <Link href={'/'}>
+        <Link href={'/terms-conditions'}>
           <a className='menu_link'>Terms of Use</a>
         </Link>
         <button onClick={handleContact} className='contact'>

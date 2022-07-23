@@ -1,8 +1,8 @@
 import BigContent from 'src/layout/BigContent';
 
-export default function Privacy() {
+export default function TermsConditions() {
   const data_head = {
-    title: 'Privacy Policy',
+    title: 'Terms & Conditions',
     description: 'Texto de prueba',
   };
 
