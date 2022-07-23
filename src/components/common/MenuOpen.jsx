@@ -1,6 +1,5 @@
 import { AnimatePresence, m } from 'framer-motion';
 import { useAppContext } from 'src/context';
-import Image from './Image';
 import MinMotion from './MinMotion';
 
 const fadeInOut = {
@@ -30,7 +29,7 @@ export default function MenuOpen({ children, isVisible = false }) {
             className='menu_open'
           >
             <button onClick={handleCloseAll} className='btn_close'>
-              <Image src='./images/icon_close.svg' alt='' />
+              <img src='./images/icon_close.svg' alt='' />
             </button>
             <div className='container'>{children}</div>
           </m.section>

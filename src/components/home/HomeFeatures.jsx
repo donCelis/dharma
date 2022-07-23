@@ -5,7 +5,7 @@ export default function HomeFeatures() {
     <section className='home_features'>
       <div className='container'>
         <h3 className='home_features_title'>
-          <Image visibleByDefault src='./images/icon_sun.svg' alt='' />
+          <img src='./images/icon_sun.svg' alt='' />
           DHARMA FEATURES
         </h3>
         <div className='row gx-0 gx-lg-4 pt-5'>
@@ -15,7 +15,7 @@ export default function HomeFeatures() {
               <h5>Extensive Database</h5>
               <p>Choose from many different session options</p>
               <figure>
-                <Image className='img-fluid' src='./images/features/phone_1/image@2x.png' alt='' />
+                <Image className='img-fluid' src='./images/features/phone_1/image@2x_c.webp' alt='' />
               </figure>
             </article>
           </aside>
@@ -25,7 +25,7 @@ export default function HomeFeatures() {
               <h5>Flexible Session</h5>
               <p>Enjoy sessions offered in-studio, home visits, or virtual</p>
               <figure>
-                <Image className='img-fluid' src='./images/features/phone_2/image@2x.png' alt='' />
+                <Image className='img-fluid' src='./images/features/phone_2/image@2x_c.webp' alt='' />
               </figure>
             </article>
           </aside>
@@ -35,7 +35,7 @@ export default function HomeFeatures() {
               <h5>Bilingual Energy Healers</h5>
               <p>Our practitioners speak multiple languages</p>
               <figure>
-                <Image className='img-fluid' src='./images/features/phone_3/image@2x.png' alt='' />
+                <Image className='img-fluid' src='./images/features/phone_3/image@2x_c.webp' alt='' />
               </figure>
             </article>
           </aside>
@@ -45,7 +45,7 @@ export default function HomeFeatures() {
               <h5>Earn Rewards</h5>
               <p>Use points to unlock 50% off discounts</p>
               <figure>
-                <Image className='img-fluid' src='./images/features/phone_4/image@2x.png' alt='' />
+                <Image className='img-fluid' src='./images/features/phone_4/image@2x_c.webp' alt='' />
               </figure>
             </article>
           </aside>

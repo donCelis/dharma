@@ -6,13 +6,13 @@ export default function HomeDiscover() {
       <div className='container mod_container'>
         <section className='d-flex gap-2'>
           <aside className='hide'>
-            <Image visibleByDefault className='icon' src='./images/highlight.svg' alt='' />
+            <img className='icon' src='./images/highlight.svg' alt='' />
           </aside>
           <aside>
             <article className='home_discover_info'>
               <div className='d-flex'>
                 <figure className='m-0'>
-                  <Image className='icon view' src='./images/highlight.svg' alt='' />
+                  <img className='icon view' src='./images/highlight.svg' alt='' />
                 </figure>
                 <h3 className='m-0'>DISCOVER</h3>
               </div>
@@ -24,7 +24,7 @@ export default function HomeDiscover() {
             <div className='discover_list'>
               <div className='flip'>
                 <article className='discover_item front'>
-                  <Image className='img-fluid' src='./images/discover/photo_1/image@2x.png' alt='' />
+                  <Image className='img-fluid' src='./images/discover/photo_1/image@2x_c.webp' alt='' />
                   <p>
                     Sound <br /> Healing
                   </p>
@@ -43,7 +43,7 @@ export default function HomeDiscover() {
               </div>
               <div className='flip'>
                 <article className='discover_item front discover_item_mod'>
-                  <Image className='img-fluid' src='./images/discover/photo_2/image@2x.png' alt='' />
+                  <Image className='img-fluid' src='./images/discover/photo_2/image@2x_c.webp' alt='' />
                   <p>
                     Reiki <br /> Therapy
                   </p>
@@ -62,7 +62,7 @@ export default function HomeDiscover() {
               </div>
               <div className='flip'>
                 <article className='discover_item front'>
-                  <Image className='img-fluid' src='./images/discover/photo_3/image@2x.png' alt='' />
+                  <Image className='img-fluid' src='./images/discover/photo_3/image@2x_c.webp' alt='' />
                   <p>
                     Holistic <br /> Massage
                   </p>

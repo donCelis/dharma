@@ -1,6 +1,5 @@
 import { AnimatePresence, m } from 'framer-motion';
 import { useState } from 'react';
-import Image from './Image';
 import MinMotion from './MinMotion';
 
 const animate = {
@@ -22,7 +21,7 @@ export default function Answer({ title, text }) {
   return (
     <article className='answers_item'>
       <figure className='icon_faq'>
-        <Image src={`./images/faqs/${!isActive ? 'icon_plus.svg' : 'icon_munus.svg'}`} alt='' />
+        <img src={`./images/faqs/${!isActive ? 'icon_plus.svg' : 'icon_munus.svg'}`} alt='' />
       </figure>
       <aside>
         <div className='answer_title' onClick={handleActive}>

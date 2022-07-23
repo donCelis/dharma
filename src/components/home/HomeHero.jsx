@@ -8,25 +8,25 @@ export default function HomeHero() {
         <div className='row'>
           <aside className='col-12 col-md-6'>
             <article>
-              <Image className='hero_logo' width='180px' src='./images/dharma.svg' alt='Dharma Logo' />
+              <img className='hero_logo' width='180px' src='./images/dharma.svg' alt='Dharma Logo' />
               <h3 className='hero_title'>ENERGY HEALING FOR ALL</h3>
               <p className='hero_info'>
                 We’ve built this platform so you can easily find and book alternative healing sessions with local &
                 bilingual energy healers.
               </p>
-              <Image className='hero_app_store' src='./images/app_store.svg' alt='Appstore' />
+              <img className='hero_app_store' src='./images/app_store.svg' alt='Appstore' />
               <Slide />
             </article>
           </aside>
           <aside className='col-12 col-md-6 d-md-block d-none'>
             <aside className='hero_phone'>
-              <Image width='320px' src='./images/phone/1.png' alt='iphone' />
+              <Image visibleByDefault width='320px' src='./images/phone/1@2x_c.webp' alt='iphone' />
             </aside>
           </aside>
         </div>
         <button className='scroll_down'>
           <small>SCROLL DOWN</small>
-          <Image visibleByDefault src='./images/icon_down.svg' alt='icon down' />
+          <img src='./images/icon_down.svg' alt='icon down' />
         </button>
       </div>
     </section>

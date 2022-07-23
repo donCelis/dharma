@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import { useAppContext } from 'src/context';
-import Image from './common/Image';
 
 export default function MenuMobile() {
   const { /* handleContact, */ handleOpen } = useAppContext();
@@ -14,7 +13,7 @@ export default function MenuMobile() {
   return (
     <div className='mobile'>
       <figure className='app_store'>
-        <Image src='./images/app_store_big.svg' alt='app store' />
+        <img src='./images/app_store_big.svg' alt='app store' />
       </figure>
       <nav className='menu_open_nav'>
         {menuLinks.map((item, index) => (
@@ -35,7 +34,7 @@ export default function MenuMobile() {
       </nav>
       <div className='menu_open_footer'>
         <figure>
-          <Image src='./images/pinterest_menu.svg' alt='' />
+          <img src='./images/pinterest_menu.svg' alt='' />
         </figure>
         <p>© Dharma 2022</p>
       </div>

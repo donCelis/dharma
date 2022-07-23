@@ -1,5 +1,5 @@
+import Link from 'next/link';
 import { useAppContext } from 'src/context';
-import Image from './common/Image';
 
 export default function Footer() {
   const { handleContact } = useAppContext();
@@ -9,17 +9,21 @@ export default function Footer() {
         <div className='middle'>
           <ul className='links'>
             <li>
-              <a href='#'>Privacy Policy</a>
+              <Link href='/privacy-policy'>
+                <a>Privacy Policy</a>
+              </Link>
             </li>
             <li>
-              <a href='#'>Terms & Conditions</a>
+              <Link href='/terms-conditions'>
+                <a>Terms & Conditions</a>
+              </Link>
             </li>
             <li>
               <button onClick={handleContact}>Contact Us</button>
             </li>
           </ul>
         </div>
-        <Image className='pinterest' src='./images/pinterest.svg' alt='pinterest' />
+        <img className='pinterest' src='./images/pinterest.svg' alt='pinterest' />
         <p className='m-0 name-logo'>© Dharma 2022</p>
       </div>
     </footer>
