@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import Answer from 'src/components/common/Answer';
 import Image from 'src/components/common/Image';
-import Footer from 'src/components/Footer';
 import Header from 'src/components/Header';
 import Page from '../components/Page';
 
@@ -90,7 +89,6 @@ export default function Faqs() {
           </section>
         </div>
       </section>
-      <Footer />
     </Page>
   );
 }

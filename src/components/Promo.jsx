@@ -1,6 +1,6 @@
-import Image from '../common/Image';
+import Image from './common/Image';
 
-export default function HomePromo() {
+export default function Promo() {
   return (
     <section className='home_promo'>
       <div className='container mod_container'>

@@ -10,7 +10,7 @@ export default function HomeHeader() {
         <Image visibleByDefault src='./images/icon_menu.svg' alt='icon menu' />
       </figure>
       <nav className='menu'>
-        <Link href={'/'}>
+        <Link href={'/privacy-policy'}>
           <a className='menu_link'>Privacy Policy</a>
         </Link>
         <Link href={'/'}>

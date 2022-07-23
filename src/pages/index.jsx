@@ -5,8 +5,7 @@ import HomeHero from 'src/components/home/HomeHero';
 import HomeDiscover from 'src/components/home/HomeDiscover';
 import HomeList from 'src/components/home/HomeList';
 import HomeFeatures from 'src/components/home/HomeFeatures';
-import HomePromo from 'src/components/home/HomePromo';
-import Footer from 'src/components/Footer';
+import Promo from 'src/components/Promo';
 
 // components
 import MenuMobile from 'src/components/MenuMobile';
@@ -40,8 +39,7 @@ export default function Home() {
       <HomeDiscover />
       <HomeList />
       <HomeFeatures />
-      <HomePromo />
-      <Footer />
+      <Promo />
     </Page>
   );
 }

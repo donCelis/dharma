@@ -6,15 +6,15 @@ import 'src/styles/globals.scss';
 import Head from 'next/head';
 import { AppProvider } from 'src/context';
 import { Router } from 'next/router';
-import nProgress from 'nprogress';
+import { done, start } from 'nprogress';
 
 import Favicons from 'src/components/common/Favicons';
 import MinMotion from 'src/components/common/MinMotion';
 import { AnimatePresence, m } from 'framer-motion';
 
-Router.events.on('routeChangeStart', () => nProgress.start());
-Router.events.on('routeChangeComplete', () => nProgress.done());
-Router.events.on('routeChangeError', () => nProgress.done());
+Router.events.on('routeChangeStart', () => start());
+Router.events.on('routeChangeComplete', () => done());
+Router.events.on('routeChangeError', () => done());
 
 const variants = {
   initial: {

@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Footer from './Footer';
 
 function Page({ title, description, children }) {
   return (
@@ -20,6 +21,7 @@ function Page({ title, description, children }) {
         <meta property='og:description' content='ENTER YOUR PAGE DESCRIPTION' />
       </Head>
       {children}
+      <Footer />
     </>
   );
 }
