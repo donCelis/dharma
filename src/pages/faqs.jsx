@@ -5,7 +5,7 @@ import Page from '../layout/Page';
 
 export default function Faqs() {
   const data_head = {
-    title: 'FAQS | Dharma App',
+    title: 'FAQS',
     description: 'Texto de prueba',
   };
 

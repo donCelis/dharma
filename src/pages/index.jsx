@@ -16,7 +16,7 @@ import MenuOpen from 'src/components/common/MenuOpen';
 import { useAppContext } from 'src/context';
 
 const data_head = {
-  title: 'Home | Dharma App',
+  title: 'Home',
   description: 'Texto de prueba',
 };
 
