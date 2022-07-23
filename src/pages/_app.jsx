@@ -1,6 +1,7 @@
 import 'bootstrap/scss/bootstrap.scss';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import 'nprogress/nprogress.css';
+import 'aos/dist/aos.css';
 import 'src/styles/globals.scss';
 
 import Head from 'next/head';
@@ -11,6 +12,8 @@ import { done, start } from 'nprogress';
 import Favicons from 'src/components/common/Favicons';
 import MinMotion from 'src/components/common/MinMotion';
 import { AnimatePresence, m } from 'framer-motion';
+import { useEffect } from 'react';
+import { init } from 'aos';
 
 Router.events.on('routeChangeStart', () => start());
 Router.events.on('routeChangeComplete', () => done());
@@ -26,6 +29,12 @@ const variants = {
 };
 
 function MyApp({ Component, pageProps, router }) {
+  useEffect(() => {
+    init({
+      easing: 'ease-in-out-quad',
+      once: true,
+    });
+  }, []);
   return (
     <>
       <Head>

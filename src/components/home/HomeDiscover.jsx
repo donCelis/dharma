@@ -22,7 +22,7 @@ export default function HomeDiscover() {
               </p>
             </article>
             <div className='discover_list'>
-              <div className='flip'>
+              <div data-aos='flip-left' className='flip'>
                 <article className='discover_item front'>
                   <Image className='img-fluid' src='./images/discover/photo_1/image@2x_c.webp' alt='' />
                   <p>
@@ -41,7 +41,7 @@ export default function HomeDiscover() {
                   </ul>
                 </article>
               </div>
-              <div className='flip'>
+              <div data-aos='flip-left' className='flip'>
                 <article className='discover_item front discover_item_mod'>
                   <Image className='img-fluid' src='./images/discover/photo_2/image@2x_c.webp' alt='' />
                   <p>
@@ -60,7 +60,7 @@ export default function HomeDiscover() {
                   </ul>
                 </article>
               </div>
-              <div className='flip'>
+              <div data-aos='flip-left' className='flip'>
                 <article className='discover_item front'>
                   <Image className='img-fluid' src='./images/discover/photo_3/image@2x_c.webp' alt='' />
                   <p>
