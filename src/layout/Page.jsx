@@ -9,7 +9,7 @@ function Page({ title, description, children }) {
   return (
     <>
       <Head>
-        <title>{title} | Dharma App</title>
+        <title>{`${title} | Dharma App`}</title>
         <meta name='title' content='' />
         <meta name='description' content={description} />
         <meta name='keywords' content='' />

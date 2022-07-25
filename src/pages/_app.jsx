@@ -33,6 +33,8 @@ function MyApp({ Component, pageProps, router }) {
     init({
       easing: 'ease-in-out-quad',
       once: true,
+      mirror: true,
+      anchorPlacement: 'bottom-center',
     });
   }, []);
   return (

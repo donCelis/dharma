@@ -7,7 +7,7 @@ export default function HomeHero() {
       <div className='container mod_container'>
         <div className='row'>
           <aside className='col-12 col-md-6'>
-            <article>
+            <article data-aos='fade-right'>
               <img className='hero_logo' width='180px' src='./images/dharma.svg' alt='Dharma Logo' />
               <h3 className='hero_title'>ENERGY HEALING FOR ALL</h3>
               <p className='hero_info'>
@@ -21,7 +21,7 @@ export default function HomeHero() {
             </article>
           </aside>
           <aside className='col-12 col-md-6 d-md-block d-none'>
-            <aside className='hero_phone'>
+            <aside data-aos='fade-left' className='hero_phone'>
               <Image visibleByDefault width='320px' src='./images/phone/1@2x_c.webp' alt='iphone' />
             </aside>
           </aside>
