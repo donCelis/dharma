@@ -34,7 +34,6 @@ function MyApp({ Component, pageProps, router }) {
       easing: 'ease-in-out-quad',
       once: true,
       mirror: true,
-      anchorPlacement: 'bottom-center',
     });
   }, []);
   return (

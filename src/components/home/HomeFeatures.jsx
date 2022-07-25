@@ -14,7 +14,7 @@ export default function HomeFeatures() {
               <p className='number'>1</p>
               <h5>Extensive Database</h5>
               <p>Choose from many different session options</p>
-              <figure>
+              <figure data-aos='zoom-in' data-aos-delay='200' data-aos-anchor-placement='center-center'>
                 <Image className='img-fluid' src='./images/features/phone_1/image@2x_c.webp' alt='' />
               </figure>
             </article>
@@ -24,7 +24,7 @@ export default function HomeFeatures() {
               <p className='number'>2</p>
               <h5>Flexible Session</h5>
               <p>Enjoy sessions offered in-studio, home visits, or virtual</p>
-              <figure>
+              <figure data-aos='zoom-in' data-aos-delay='400' data-aos-anchor-placement='center-center'>
                 <Image className='img-fluid' src='./images/features/phone_2/image@2x_c.webp' alt='' />
               </figure>
             </article>
@@ -34,7 +34,7 @@ export default function HomeFeatures() {
               <p className='number'>3</p>
               <h5>Bilingual Energy Healers</h5>
               <p>Our practitioners speak multiple languages</p>
-              <figure>
+              <figure data-aos='zoom-in' data-aos-delay='600' data-aos-anchor-placement='center-center'>
                 <Image className='img-fluid' src='./images/features/phone_3/image@2x_c.webp' alt='' />
               </figure>
             </article>
@@ -44,7 +44,7 @@ export default function HomeFeatures() {
               <p className='number'>4</p>
               <h5>Earn Rewards</h5>
               <p>Use points to unlock 50% off discounts</p>
-              <figure>
+              <figure data-aos='zoom-in' data-aos-delay='800' data-aos-anchor-placement='center-center'>
                 <Image className='img-fluid' src='./images/features/phone_4/image@2x_c.webp' alt='' />
               </figure>
             </article>
