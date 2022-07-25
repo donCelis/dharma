@@ -1,6 +1,9 @@
 import { useRef } from 'react';
 
 export default function ContactUs() {
+  const defaultEmail = 'info@mydharma.app';
+  const subject = 'message dharma-app';
+
   const nameRef = useRef();
   const emailRef = useRef();
   const smsRef = useRef();
@@ -8,12 +11,14 @@ export default function ContactUs() {
   const handleSumbit = (e) => {
     e.preventDefault();
     const data = {
-      name: nameRef.current.value,
-      email: emailRef.current.value,
-      sms: smsRef.current.value,
+      name: nameRef.current.value.trim(),
+      email: emailRef.current.value.trim(),
+      sms: smsRef.current.value.trim(),
     };
 
-    console.log(data);
+    const message = ({ name, email, sms }) => `Hi, ... ${name}, ${sms}, ${email}`;
+
+    window.location.href = `mailto:${defaultEmail}?subject=${subject}&body=${message(data)}`;
 
     e.target.reset();
   };
