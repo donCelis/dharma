@@ -1,6 +1,5 @@
 import { AnimatePresence, m } from 'framer-motion';
 import { useState } from 'react';
-import MinMotion from './MinMotion';
 
 const animate = {
   open: {
@@ -29,26 +28,24 @@ export default function Answer({ title, text }) {
         </div>
         <AnimatePresence exitBeforeEnter>
           {isActive && (
-            <MinMotion>
-              <m.section
-                className='answer_content'
-                initial='close'
-                exit='close'
-                animate={isActive ? 'open' : 'close'}
-                variants={animate}
-                transition={{ duration: 0.3 }}
-              >
-                {typeof text === 'string' ? (
-                  <p className='text'>{text}</p>
-                ) : (
-                  text.map((element, index) => (
-                    <p key={index} className='text'>
-                      {element}
-                    </p>
-                  ))
-                )}
-              </m.section>
-            </MinMotion>
+            <m.section
+              className='answer_content'
+              initial='close'
+              exit='close'
+              animate={isActive ? 'open' : 'close'}
+              variants={animate}
+              transition={{ duration: 0.3 }}
+            >
+              {typeof text === 'string' ? (
+                <p className='text'>{text}</p>
+              ) : (
+                text.map((element, index) => (
+                  <p key={index} className='text'>
+                    {element}
+                  </p>
+                ))
+              )}
+            </m.section>
           )}
         </AnimatePresence>
       </aside>

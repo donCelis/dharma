@@ -1,4 +1,37 @@
-import Image from '../common/Image';
+// import { m } from 'framer-motion';
+// import Image from '../common/Image';
+import CardFeature from '../common/CardFeature';
+
+const dataFeatures = [
+  {
+    id: 1,
+    title: 'Extensive Database',
+    sms: 'Choose from many different session options',
+    image: './images/features/phone_1/image@2x_c.webp',
+    delay: 0.3,
+  },
+  {
+    id: 2,
+    title: 'Flexible Session',
+    sms: 'Enjoy sessions offered in-studio, home visits, or virtual',
+    image: './images/features/phone_2/image@2x_c.webp',
+    delay: 0.6,
+  },
+  {
+    id: 3,
+    title: 'Bilingual Energy Healers',
+    sms: 'Our practitioners speak multiple languages',
+    image: './images/features/phone_3/image@2x_c.webp',
+    delay: 0.9,
+  },
+  {
+    id: 4,
+    title: 'Earn Rewards',
+    sms: 'Use points to unlock 50% off discounts',
+    image: './images/features/phone_4/image@2x_c.webp',
+    delay: 1.2,
+  },
+];
 
 export default function HomeFeatures() {
   return (
@@ -9,46 +42,9 @@ export default function HomeFeatures() {
           DHARMA FEATURES
         </h3>
         <div className='row gx-0 gx-lg-4 pt-5'>
-          <aside className='col-12 col-sm-6 col-md-6 col-lg-3'>
-            <article className='features_item'>
-              <p className='number'>1</p>
-              <h5>Extensive Database</h5>
-              <p>Choose from many different session options</p>
-              <figure data-aos='zoom-in' data-aos-delay='200' data-aos-anchor-placement='center-center'>
-                <Image className='img-fluid' src='./images/features/phone_1/image@2x_c.webp' alt='' />
-              </figure>
-            </article>
-          </aside>
-          <aside className='col-12 col-sm-6 col-md-6 col-lg-3'>
-            <article className='features_item'>
-              <p className='number'>2</p>
-              <h5>Flexible Session</h5>
-              <p>Enjoy sessions offered in-studio, home visits, or virtual</p>
-              <figure data-aos='zoom-in' data-aos-delay='400' data-aos-anchor-placement='center-center'>
-                <Image className='img-fluid' src='./images/features/phone_2/image@2x_c.webp' alt='' />
-              </figure>
-            </article>
-          </aside>
-          <aside className='col-12 col-sm-6 col-md-6 col-lg-3'>
-            <article className='features_item'>
-              <p className='number'>3</p>
-              <h5>Bilingual Energy Healers</h5>
-              <p>Our practitioners speak multiple languages</p>
-              <figure data-aos='zoom-in' data-aos-delay='600' data-aos-anchor-placement='center-center'>
-                <Image className='img-fluid' src='./images/features/phone_3/image@2x_c.webp' alt='' />
-              </figure>
-            </article>
-          </aside>
-          <aside className='col-12 col-sm-6 col-md-6 col-lg-3'>
-            <article className='features_item'>
-              <p className='number'>4</p>
-              <h5>Earn Rewards</h5>
-              <p>Use points to unlock 50% off discounts</p>
-              <figure data-aos='zoom-in' data-aos-delay='800' data-aos-anchor-placement='center-center'>
-                <Image className='img-fluid' src='./images/features/phone_4/image@2x_c.webp' alt='' />
-              </figure>
-            </article>
-          </aside>
+          {dataFeatures.map((card) => (
+            <CardFeature key={card.id} {...card} />
+          ))}
         </div>
       </div>
     </section>

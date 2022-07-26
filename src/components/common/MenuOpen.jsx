@@ -1,6 +1,5 @@
 import { AnimatePresence, m } from 'framer-motion';
 import { useAppContext } from 'src/context';
-import MinMotion from './MinMotion';
 
 const fadeInOut = {
   open: {
@@ -19,21 +18,19 @@ export default function MenuOpen({ children, isVisible = false }) {
   return (
     <AnimatePresence exitBeforeEnter initial={false}>
       {isVisible && (
-        <MinMotion>
-          <m.section
-            variants={fadeInOut}
-            initial='closed'
-            exit='closed'
-            animate={isVisible ? 'open' : 'closed'}
-            transition={{ duration: 1, ease: 'backInOut' }}
-            className='menu_open'
-          >
-            <button onClick={handleCloseAll} className='btn_close'>
-              <img src='./images/icon_close.svg' alt='' />
-            </button>
-            <div className='container'>{children}</div>
-          </m.section>
-        </MinMotion>
+        <m.section
+          variants={fadeInOut}
+          initial='closed'
+          exit='closed'
+          animate={isVisible ? 'open' : 'closed'}
+          transition={{ duration: 1, ease: 'backInOut' }}
+          className='menu_open'
+        >
+          <button onClick={handleCloseAll} className='btn_close'>
+            <img src='./images/icon_close.svg' alt='' />
+          </button>
+          <div className='container'>{children}</div>
+        </m.section>
       )}
     </AnimatePresence>
   );

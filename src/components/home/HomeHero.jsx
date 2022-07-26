@@ -1,5 +1,6 @@
 import Slide from '../common/Slide';
 import Image from '../common/Image';
+import { m } from 'framer-motion';
 
 export default function HomeHero() {
   return (
@@ -7,7 +8,11 @@ export default function HomeHero() {
       <div className='container mod_container'>
         <div className='row'>
           <aside className='col-12 col-md-6'>
-            <article data-aos='fade-right'>
+            <m.article
+              viewport={{ once: true }}
+              whileInView={{ x: ['-100%', '0%'], opacity: [0, 1] }}
+              transition={{ duration: 0.5, ease: 'easeOut' }}
+            >
               <img className='hero_logo' width='180px' src='./images/dharma.svg' alt='Dharma Logo' />
               <h3 className='hero_title'>ENERGY HEALING FOR ALL</h3>
               <p className='hero_info'>
@@ -18,12 +23,17 @@ export default function HomeHero() {
                 <img src='./images/app_store.svg' alt='Appstore' />
               </a>
               <Slide />
-            </article>
+            </m.article>
           </aside>
           <aside className='col-12 col-md-6 d-md-block d-none'>
-            <aside data-aos='fade-left' className='hero_phone'>
+            <m.aside
+              viewport={{ once: true }}
+              whileInView={{ x: ['100%', '0%'], opacity: [0, 1] }}
+              transition={{ duration: 0.5, ease: 'easeOut' }}
+              className='hero_phone'
+            >
               <Image visibleByDefault width='320px' src='./images/phone/1@2x_c.webp' alt='iphone' />
-            </aside>
+            </m.aside>
           </aside>
         </div>
         <button className='scroll_down'>
