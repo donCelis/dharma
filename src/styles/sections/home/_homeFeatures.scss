@@ -2,8 +2,8 @@
 
 .home_features {
   padding: 2rem 0 4rem;
-  @include mobile{
-    padding: 1rem 0;
+  @include mobile {
+    padding: 2rem 0;
   }
   &_title {
     @include font('Avenir-Heavy');
@@ -41,7 +41,7 @@
       font-size: 1.2em;
       letter-spacing: 0.15px;
       margin-bottom: 0.8rem;
-      @include desktop-md{
+      @include desktop-md {
         font-size: 1em;
       }
       @include tablet {
@@ -52,7 +52,7 @@
       @include font('PTSans-Regular');
       color: #959595;
       font-size: 1em;
-      @include desktop-md{
+      @include desktop-md {
         font-size: 0.9em;
       }
       @include tablet {
