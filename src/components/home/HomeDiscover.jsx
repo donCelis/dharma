@@ -67,11 +67,14 @@ export default function HomeDiscover() {
                 Once on the app, YOU can book sessions from our network of <strong>Energy Healers</strong> and{' '}
                 <strong>Holistic Practitioners.</strong>
               </p>
-              <p className='text-center'>Tap for more info</p>
+              <div className='d-flex align-items-center justify-content-center'>
+                <img className='me-1' width='24px' src='./images/swap-vertical.svg' alt='swap-vertical' />
+                <p className='text-center m-0'>Tap for more info</p>
+              </div>
             </article>
             <m.div
               variants={container}
-              viewport={{ once: true, amount: 0.5 }}
+              viewport={{ once: true }}
               initial='hidden'
               whileInView='show'
               className='discover_list'

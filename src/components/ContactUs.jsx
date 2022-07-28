@@ -2,7 +2,7 @@ import { useRef } from 'react';
 
 export default function ContactUs() {
   const defaultEmail = 'info@mydharma.app';
-  const subject = 'Support';
+  const subject = 'Dharma Support';
 
   const nameRef = useRef();
   const emailRef = useRef();
