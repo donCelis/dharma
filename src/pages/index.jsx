@@ -17,7 +17,6 @@ import { useAppContext } from 'src/context';
 
 const data_head = {
   title: 'Home',
-  description: 'Texto de prueba',
 };
 
 export default function Home() {

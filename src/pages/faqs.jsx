@@ -6,7 +6,6 @@ import Page from '../layout/Page';
 export default function Faqs() {
   const data_head = {
     title: 'FAQS',
-    description: 'Texto de prueba',
   };
 
   const short_answers = [

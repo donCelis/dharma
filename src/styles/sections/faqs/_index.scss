@@ -16,11 +16,13 @@
     }
     &_item {
       margin-bottom: 1rem;
-      display: inline-flex;
-      gap: 1rem;
+      display: flex;
+      /* gap: 1rem; */
       overflow: hidden;
       .icon_faq {
         margin: 0;
+        padding-right: 1rem;
+        cursor: pointer;
         img {
           width: 1.3rem;
         }

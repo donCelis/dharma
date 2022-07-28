@@ -3,7 +3,6 @@ import BigContent from 'src/layout/BigContent';
 export default function TermsConditions() {
   const data_head = {
     title: 'Terms & Conditions',
-    description: 'Texto de prueba',
   };
 
   return (

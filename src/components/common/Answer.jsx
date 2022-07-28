@@ -19,7 +19,7 @@ export default function Answer({ title, text }) {
 
   return (
     <article className='answers_item'>
-      <figure className='icon_faq'>
+      <figure className='icon_faq' onClick={handleActive}>
         <img src={`./images/faqs/${!isActive ? 'icon_plus.svg' : 'icon_munus.svg'}`} alt='' />
       </figure>
       <aside>

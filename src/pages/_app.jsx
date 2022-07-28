@@ -1,4 +1,5 @@
-import 'bootstrap/scss/bootstrap.scss';
+import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/scss/bootstrap.scss';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import 'nprogress/nprogress.css';
 import 'src/styles/globals.scss';
@@ -30,16 +31,28 @@ function MyApp({ Component, pageProps, router }) {
     <>
       <Head>
         <meta name='viewport' content='initial-scale=1, width=device-width' />
-        <meta name='language' content='' />
-        <meta name='author' content='' />
-        <meta name='copyright' content='' />
-        <meta name='robots' content='' />
+        <meta name='language' content='english' />
+        <meta name='author' content='Dharma Team' />
+        <meta name='copyright' content='DHARMA app - Protect Your Energy' />
 
-        <meta name='twitter:url' content='URL of your page' />
-        <meta name='twitter:image' content='URL of image' />
+        <meta name='twitter:url' content='https://mydharma.app/' />
+        <meta name='twitter:image' content='./images/cover_c.jpg' />
 
-        <meta property='og:url' content='ENTER PAGE URL' />
-        <meta property='og:image' content='URL OF IMAGE' />
+        <meta property='og:url' content='https://mydharma.app/' />
+        <meta property='og:image' content='./images/cover_c.jpg' />
+
+        <meta
+          name='description'
+          content='Find Bilingual Energy Healers in Medellin today —> Sound Healing, Reiki Therapy, and much more.. Session are safe and offered ~in-studio ~at- home or ~virtually …'
+        />
+        <meta
+          name='twitter:description'
+          content='Find Bilingual Energy Healers in Medellin today —> Sound Healing, Reiki Therapy, and much more.. Session are safe and offered ~in-studio ~at- home or ~virtually …'
+        />
+        <meta
+          property='og:description'
+          content='Find Bilingual Energy Healers in Medellin today —> Sound Healing, Reiki Therapy, and much more.. Session are safe and offered ~in-studio ~at- home or ~virtually …'
+        />
 
         <Favicons />
       </Head>

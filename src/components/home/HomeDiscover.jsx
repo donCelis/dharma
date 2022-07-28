@@ -63,10 +63,11 @@ export default function HomeDiscover() {
                 </figure>
                 <h3 className='m-0'>DISCOVER</h3>
               </div>
-              <p className='col-12 col-md-8 col-lg-6'>
+              <p className='col-12 col-md-8 col-lg-6 discover_text'>
                 Once on the app, YOU can book sessions from our network of <strong>Energy Healers</strong> and{' '}
                 <strong>Holistic Practitioners.</strong>
               </p>
+              <p className='text-center'>Tap for more info</p>
             </article>
             <m.div
               variants={container}

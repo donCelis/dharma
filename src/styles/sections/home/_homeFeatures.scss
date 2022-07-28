@@ -2,6 +2,9 @@
 
 .home_features {
   padding: 2rem 0 4rem;
+  @include mobile{
+    padding: 1rem 0;
+  }
   &_title {
     @include font('Avenir-Heavy');
     text-decoration: underline;
@@ -35,17 +38,26 @@
       @include font('PTSans-Caption');
       color: #9ed3e8;
       text-decoration: underline;
-      font-size: 1.3em;
+      font-size: 1.2em;
       letter-spacing: 0.15px;
       margin-bottom: 0.8rem;
-      @include mobile {
-        font-size: 1.1em;
+      @include desktop-md{
+        font-size: 1em;
+      }
+      @include tablet {
+        font-size: 1.2em;
       }
     }
     p {
       @include font('PTSans-Regular');
       color: #959595;
-      font-size: 1.125em;
+      font-size: 1em;
+      @include desktop-md{
+        font-size: 0.9em;
+      }
+      @include tablet {
+        font-size: 1em;
+      }
     }
   }
 }

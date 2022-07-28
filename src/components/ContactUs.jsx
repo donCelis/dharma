@@ -2,7 +2,7 @@ import { useRef } from 'react';
 
 export default function ContactUs() {
   const defaultEmail = 'info@mydharma.app';
-  const subject = 'message dharma-app';
+  const subject = 'Support';
 
   const nameRef = useRef();
   const emailRef = useRef();
@@ -16,7 +16,7 @@ export default function ContactUs() {
       sms: smsRef.current.value.trim(),
     };
 
-    const message = ({ name, email, sms }) => `Hi, ... ${name}, ${sms}, ${email}`;
+    const message = ({ name, email, sms }) => `Hi Dharma Team, ${name}, ${sms}, ${email}`;
 
     window.location.href = `mailto:${defaultEmail}?subject=${subject}&body=${message(data)}`;
 

@@ -4,25 +4,20 @@ import ContactUs from 'src/components/ContactUs';
 import { useAppContext } from 'src/context';
 import Footer from '../components/Footer';
 
-function Page({ title, description, children }) {
+function Page({ title, children }) {
   const { isOpenContact } = useAppContext();
   return (
     <>
       <Head>
-        <title>{`${title} | Dharma App`}</title>
-        <meta name='title' content='' />
-        <meta name='description' content={description} />
+        <title>{`${title} | DHARMA app - Protect Your Energy`}</title>
+        <meta name='title' content={title} />
+        <meta property='og:title' content={title} />
+        <meta name='twitter:title' content={title} />
+
         <meta name='keywords' content='' />
 
         <meta name='twitter:card' content='summary_large_image' />
-
-        <meta name='twitter:title' content='Title of your page' />
-        <meta name='twitter:description' content='Your description here' />
-
         <meta property='og:type' content='website' />
-
-        <meta property='og:title' content='ENTER PAGE TITLE' />
-        <meta property='og:description' content='ENTER YOUR PAGE DESCRIPTION' />
       </Head>
       <MenuOpen isVisible={isOpenContact}>
         <ContactUs />
@@ -35,7 +30,6 @@ function Page({ title, description, children }) {
 
 Page.defaultProps = {
   title: 'Dharma -  Website',
-  description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et, dicta.',
 };
 
 export default Page;

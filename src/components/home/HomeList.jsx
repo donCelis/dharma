@@ -35,7 +35,7 @@ export default function HomeList() {
             <m.ul variants={container} viewport={{ once: true, amount: 1 }} initial='hidden' whileInView='show'>
               <m.li variants={item}>
                 <p>
-                  Dharma is here to help you <span>HEAL YOUR ENERGY</span> , use the app to book Energy Healing sessions
+                  Dharma is here to help you <span>HEAL YOUR ENERGY</span> use the app to book Energy Healing sessions
                   near you.
                 </p>
               </m.li>
@@ -45,8 +45,8 @@ export default function HomeList() {
                   dharma field teams.
                 </p>
               </m.li>
-              <m.li variants={item}>
-                <p>
+              <m.li variants={item} className='m-0'>
+                <p className='m-0'>
                   Rest assure your session will be in a <span>Clean</span> and <span>Safe</span> environment.
                 </p>
               </m.li>
