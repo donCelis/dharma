@@ -3,7 +3,6 @@ import Image from './Image';
 
 export default function CardFeature({ id, title, sms, image, delay }) {
   const smsBr = sms.split('/');
-  console.log(smsBr);
   return (
     <aside className='col-12 col-sm-6 col-md-6 col-lg-3'>
       <article className='features_item'>
