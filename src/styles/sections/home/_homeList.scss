@@ -1,75 +1,75 @@
 @use '../../partials' as *;
 
 .home_list {
-  background: #edf5f58b;
-  padding: 2rem 0;
-  &_grid {
-    display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
-    align-items: center;
-    @include tablet {
-      grid-template-columns: 1fr;
-      width: 80%;
-      margin: 0 auto;
-    }
-    @include mobile {
-      width: 100%;
-      margin: 0 auto;
-    }
-  }
-  .image {
-    @include tablet {
-      display: none;
-    }
-    img {
-      height: 30rem;
-      @include tablet {
-        display: none;
-      }
-    }
-  }
-  &_title {
-    color: #6f7070;
-    margin-bottom: 1.4rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    @include font('Avenir-Heavy');
-    img {
-      width: 24px;
-      margin-right: 0.6rem;
-    }
-  }
-  ul {
-    list-style: none;
-    margin: 0;
-    li {
-      margin-bottom: 1rem;
-      position: relative;
-      &::before {
-        content: '';
-        position: absolute;
-        top: 0.5rem;
-        left: -1.4rem;
-        min-width: 1rem;
-        min-height: 1rem;
-        background-color: #6f7070;
-        mask-image: url('/images/icon_list.svg');
-        mask-size: cover;
-        mask-repeat: no-repeat;
-      }
-      p {
-        @include font('AvenirNext-Regular');
-        color: #959595;
-        font-size: 1.4em;
-        @include mobile {
-          font-size: 1em;
-        }
-        span {
-          @include font('AvenirNext-Medium');
-          color: #9ed3e8;
-        }
-      }
-    }
-  }
+	background: #edf5f58b;
+	padding: 2rem 0;
+	&_grid {
+		display: grid;
+		grid-template-columns: 1fr 3fr 1fr;
+		align-items: center;
+		@include tablet {
+			grid-template-columns: 1fr;
+			width: 80%;
+			margin: 0 auto;
+		}
+		@include mobile {
+			width: 100%;
+			margin: 0 auto;
+		}
+	}
+	.image {
+		@include tablet {
+			display: none;
+		}
+		img {
+			height: 30rem;
+			@include tablet {
+				display: none;
+			}
+		}
+	}
+	&_title {
+		color: #6f7070;
+		margin-bottom: 1.4rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		@include font('Avenir-Heavy');
+		img {
+			width: 24px;
+			margin-right: 0.6rem;
+		}
+	}
+	ul {
+		list-style: none;
+		margin: 0;
+		li {
+			margin-bottom: 1rem;
+			position: relative;
+			&::before {
+				content: '';
+				position: absolute;
+				top: 0.5rem;
+				left: -1.4rem;
+				min-width: 1rem;
+				min-height: 1rem;
+				background-color: #6f7070;
+				mask-image: url('/images/icon_list.svg');
+				mask-size: cover;
+				mask-repeat: no-repeat;
+			}
+			p {
+				@include font('AvenirNext-Regular');
+				color: #959595;
+				font-size: 1.4em;
+				@include mobile {
+					font-size: 1em;
+				}
+				span {
+					@include font('AvenirNext-Medium');
+					color: #9ed3e8;
+				}
+			}
+		}
+	}
 }

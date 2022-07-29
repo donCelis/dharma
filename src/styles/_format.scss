@@ -3,67 +3,67 @@
 @use './partials/fonts';
 
 * {
-  padding: 0;
-  margin: 0;
-  outline: 0;
+	padding: 0;
+	margin: 0;
+	outline: 0;
 }
 body {
-  background: hsl(0, 0%, 97%);
-  @include font('Avenir');
+	background: hsl(0, 0%, 97%);
+	@include font('Avenir');
 }
 a {
-  color: inherit;
-  text-decoration: none;
+	color: inherit;
+	text-decoration: none;
 }
 button {
-  border: 0;
-  background: transparent;
+	border: 0;
+	background: transparent;
 }
 
 // general styles
 @include mobile {
-  .container {
-    width: 90%;
-  }
+	.container {
+		width: 90%;
+	}
 }
 .mod_container {
-  width: 75%;
-  max-width: 1440px;
-  @include desktop-md {
-    width: 80%;
-  }
-  @include desktop-sm {
-    width: 85%;
-  }
-  @include tablet {
-    width: 90%;
-  }
+	width: 75%;
+	max-width: 1440px;
+	@include desktop-md {
+		width: 80%;
+	}
+	@include desktop-sm {
+		width: 85%;
+	}
+	@include tablet {
+		width: 90%;
+	}
 }
 .mod-gap {
-  gap: 5rem;
-  @include desktop-md {
-    gap: 2rem;
-  }
-  @include desktop-sm {
-    gap: 0;
-  }
+	gap: 5rem;
+	@include desktop-md {
+		gap: 2rem;
+	}
+	@include desktop-sm {
+		gap: 0;
+	}
 }
 .app_store {
-  margin: 0;
-  text-align: center;
-  display: inline-block;
-  img {
-    width: 8rem;
-    margin: 0 auto;
-  }
+	margin: 0;
+	text-align: center;
+	display: inline-block;
+	img {
+		width: 8rem;
+		margin: 0 auto;
+	}
 }
 .app_store_min {
-  img {
-    width: 7rem;
-  }
+	img {
+		width: 7rem;
+	}
 }
 .icon_back {
-  img {
-    width: 1.3rem;
-  }
+	img {
+		width: 1.3rem;
+	}
 }

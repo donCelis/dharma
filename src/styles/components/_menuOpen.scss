@@ -1,76 +1,76 @@
 @use '../partials' as *;
 
 .menu_open {
-  width: 100%;
-  height: 100%;
-  background: rgba(56, 56, 56, 0.6);
-  backdrop-filter: blur(12px);
-  position: fixed;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 9999;
-  .btn_close {
-    background: transparent;
-    border: 0;
-    display: inline-block;
-    position: absolute;
-    left: 2.5rem;
-    top: 2rem;
-    z-index: 100;
-    @include mobile {
-      top: 0.8rem;
-      left: 0.8rem;
-    }
-    img {
-      width: 1.6rem;
-      height: 1.6rem;
-    }
-  }
-  .container {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    @include tablet {
-      align-items: flex-start;
-      padding-top: 6rem;
-    }
-    @include mobile {
-      align-items: flex-start;
-      padding-top: 4rem;
-    }
-  }
-  .mobile {
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
-    align-items: center;
-  }
-  &_nav {
-    display: grid;
-    text-align: center;
-    gap: 0.5rem;
-    a,
-    button {
-      @include font('Avenir-Medium');
-      font-size: 1.7em;
-      color: #ffffff;
-      &:hover {
-        color: #ffffff;
-      }
-    }
-  }
-  &_footer {
-    text-align: center;
-    color: #ffffff;
-    img {
-      width: 2rem;
-    }
-    p {
-      margin: 0;
-    }
-  }
+	width: 100%;
+	height: 100%;
+	background: rgba(56, 56, 56, 0.6);
+	backdrop-filter: blur(12px);
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 9999;
+	.btn_close {
+		background: transparent;
+		border: 0;
+		display: inline-block;
+		position: absolute;
+		left: 2.5rem;
+		top: 2rem;
+		z-index: 100;
+		@include mobile {
+			top: 0.8rem;
+			left: 0.8rem;
+		}
+		img {
+			width: 1.6rem;
+			height: 1.6rem;
+		}
+	}
+	.container {
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 100%;
+		@include tablet {
+			align-items: flex-start;
+			padding-top: 6rem;
+		}
+		@include mobile {
+			align-items: flex-start;
+			padding-top: 4rem;
+		}
+	}
+	.mobile {
+		display: flex;
+		flex-direction: column;
+		gap: 3rem;
+		align-items: center;
+	}
+	&_nav {
+		display: grid;
+		text-align: center;
+		gap: 0.5rem;
+		a,
+		button {
+			@include font('Avenir-Medium');
+			font-size: 1.7em;
+			color: #ffffff;
+			&:hover {
+				color: #ffffff;
+			}
+		}
+	}
+	&_footer {
+		text-align: center;
+		color: #ffffff;
+		img {
+			width: 2rem;
+		}
+		p {
+			margin: 0;
+		}
+	}
 }

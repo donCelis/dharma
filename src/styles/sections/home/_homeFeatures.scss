@@ -1,63 +1,63 @@
 @use '../../partials' as *;
 
 .home_features {
-  padding: 2rem 0 4rem;
-  @include mobile {
-    padding: 2rem 0;
-  }
-  &_title {
-    @include font('Avenir-Heavy');
-    text-decoration: underline;
-    color: #6f7070;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    img {
-      width: 24px;
-      margin-right: 0.6rem;
-    }
-  }
-  .features_item {
-    text-align: center;
-    @include mobile {
-      width: 60%;
-      margin: 0 auto;
-    }
-    .number {
-      @include font('PTSans-Caption');
-      color: #9ed3e8;
-      font-size: 1.6em;
-      border: 2px solid #9ee8dd;
-      display: inline-block;
-      padding: 0.4rem 1.1rem;
-      border-radius: 100%;
-      min-width: 55px;
-      min-height: 55px;
-    }
-    h5 {
-      @include font('PTSans-Caption');
-      color: #9ed3e8;
-      text-decoration: underline;
-      font-size: 1.2em;
-      letter-spacing: 0.15px;
-      margin-bottom: 0.8rem;
-      @include desktop-md {
-        font-size: 1em;
-      }
-      @include tablet {
-        font-size: 1.2em;
-      }
-    }
-    p {
-      @include font('PTSans-Regular');
-      color: #959595;
-      font-size: 1em;
-      @include desktop-md {
-        font-size: 0.9em;
-      }
-      @include tablet {
-        font-size: 1em;
-      }
-    }
-  }
+	padding: 2rem 0 4rem;
+	@include mobile {
+		padding: 2rem 0;
+	}
+	&_title {
+		@include font('Avenir-Heavy');
+		text-decoration: underline;
+		color: #6f7070;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		img {
+			width: 24px;
+			margin-right: 0.6rem;
+		}
+	}
+	.features_item {
+		text-align: center;
+		@include mobile {
+			width: 60%;
+			margin: 0 auto;
+		}
+		.number {
+			@include font('PTSans-Caption');
+			color: #9ed3e8;
+			font-size: 1.6em;
+			border: 2px solid #9ee8dd;
+			display: inline-block;
+			padding: 0.4rem 1.1rem;
+			border-radius: 100%;
+			min-width: 55px;
+			min-height: 55px;
+		}
+		h5 {
+			@include font('PTSans-Caption');
+			color: #9ed3e8;
+			text-decoration: underline;
+			font-size: 1.2em;
+			letter-spacing: 0.15px;
+			margin-bottom: 0.8rem;
+			@include desktop-md {
+				font-size: 1em;
+			}
+			@include tablet {
+				font-size: 1.2em;
+			}
+		}
+		p {
+			@include font('PTSans-Regular');
+			color: #959595;
+			font-size: 1em;
+			@include desktop-md {
+				font-size: 0.9em;
+			}
+			@include tablet {
+				font-size: 1em;
+			}
+		}
+	}
 }

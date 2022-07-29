@@ -1,163 +1,168 @@
 @use '../../partials' as *;
 
 .home_hero {
-  position: relative;
-  overflow: hidden;
-  &::after {
-    content: '';
-    position: absolute;
-    z-index: -2;
-    top: 0;
-    left: 0;
-    background: url('/images/background/mandala_single.webp') no-repeat center/contain;
-    width: 100%;
-    height: 100%;
-    filter: invert(1) opacity(0.07);
-    @include mobile {
-      background-position-y: top;
-    }
-  }
-  @include mobile {
-    text-align: center;
-  }
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: -1;
-    width: 80%;
-    height: 70px;
-    background: #78ffd5a0;
-    filter: blur(50px);
-    opacity: 0.7;
-    @include mobile {
-      width: 100%;
-    }
-  }
-  .row {
-    align-items: center;
-    // padding: 2rem 0;
-    position: relative;
-    @include mobile {
-      padding: 2rem 0;
-    }
-    &::before {
-      content: '';
-      position: absolute;
-      z-index: -1;
-      top: -2rem;
-      right: 2rem;
-      width: 24rem;
-      height: 8rem;
-      background: #9278ffa0;
-      filter: blur(55px) opacity(0.4);
-      @include tablet {
-        display: none;
-      }
-    }
-  }
-  .hero {
-    &_logo {
-      margin-bottom: 3rem;
-    }
-    &_title {
-      transform: translateX(-2.5px);
-      color: hsl(180, 3%, 68%);
-      letter-spacing: 1px;
-      margin-bottom: 1rem;
-      @include font('Avenir-Medium');
-      @include mobile {
-        font-size: 1.7em;
-      }
-    }
-    &_info {
-      color: hsl(246, 33%, 33%);
-      letter-spacing: 0.4px;
-      margin: 0;
-      font-size: 1.2em;
-      @include font('Avenir-Heavy');
-    }
-    &_app_store {
-      display: inline-block;
-      margin: 3rem 0;
-      img {
-        width: 7.5rem;
-        @include mobile {
-          width: 8.75rem;
-        }
-      }
-    }
-    &_phone {
-      display: flex;
-      justify-content: flex-end;
-    }
-    &_slider {
-      display: grid;
-      align-items: center;
-      width: 240px;
-      height: 36px;
-      border-radius: 7px;
-      padding: 0.5rem;
-      margin-bottom: 1rem;
-      background: linear-gradient(90deg, hsl(207, 51%, 56%) 0%, hsl(190, 51%, 59%) 46%, hsl(162, 97%, 73%) 100%);
-      position: relative;
-      text-align: center;
-      @include mobile {
-        width: 100%;
-      }
-      &::before {
-        position: absolute;
-        content: 'SLIDE FOR OFFER';
-        color: white;
-        top: 50%;
-        left: 50%;
-        width: 100%;
-        transform: translate(-50%, -50%);
-      }
-      .wrapper {
-        width: 100%;
-        height: 100%;
-        .cube {
-          width: 2.2rem;
-          height: 100%;
-          background: white;
-          position: relative;
-          border-radius: 7px;
-          z-index: 2;
-          cursor: pointer;
-        }
-      }
-    }
-  }
-  .offer_text {
-    color: hsl(246, 33%, 33%);
-    @include font('Avenir-Heavy');
-  }
-  .scroll_down {
-    color: hsl(180, 3%, 68%);
-    border: 0;
-    background: transparent;
-    margin-bottom: 0.6rem;
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    small {
-      letter-spacing: 0.5px;
-      font-size: 0.9em;
-      @include font('Avenir-Light');
-    }
-    img {
-      width: 8px;
-      animation: moveUpDown 0.5s ease-in-out infinite alternate;
-    }
-  }
+	position: relative;
+	overflow: hidden;
+	&::after {
+		content: '';
+		position: absolute;
+		z-index: -2;
+		top: 0;
+		left: 0;
+		background: url('/images/background/mandala_single.webp') no-repeat center/contain;
+		width: 100%;
+		height: 100%;
+		filter: invert(1) opacity(0.07);
+		@include mobile {
+			background-position-y: top;
+		}
+	}
+	@include mobile {
+		text-align: center;
+	}
+	&::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		z-index: -1;
+		width: 80%;
+		height: 70px;
+		background: #78ffd5a0;
+		filter: blur(50px);
+		opacity: 0.7;
+		@include mobile {
+			width: 100%;
+		}
+	}
+	.row {
+		align-items: center;
+		// padding: 2rem 0;
+		position: relative;
+		@include mobile {
+			padding: 2rem 0;
+		}
+		&::before {
+			content: '';
+			position: absolute;
+			z-index: -1;
+			top: -2rem;
+			right: 2rem;
+			width: 24rem;
+			height: 8rem;
+			background: #9278ffa0;
+			filter: blur(55px) opacity(0.4);
+			@include tablet {
+				display: none;
+			}
+		}
+	}
+	.hero {
+		&_logo {
+			margin-bottom: 3rem;
+		}
+		&_title {
+			transform: translateX(-2.5px);
+			color: hsl(180, 3%, 68%);
+			letter-spacing: 1px;
+			margin-bottom: 1rem;
+			@include font('Avenir-Medium');
+			@include mobile {
+				font-size: 1.7em;
+			}
+		}
+		&_info {
+			color: hsl(246, 33%, 33%);
+			letter-spacing: 0.4px;
+			margin: 0;
+			font-size: 1.2em;
+			@include font('Avenir-Heavy');
+		}
+		&_app_store {
+			display: inline-block;
+			margin: 3rem 0;
+			img {
+				width: 7.5rem;
+				@include mobile {
+					width: 8.75rem;
+				}
+			}
+		}
+		&_phone {
+			display: flex;
+			justify-content: flex-end;
+		}
+		&_slider {
+			display: grid;
+			align-items: center;
+			width: 240px;
+			height: 36px;
+			border-radius: 7px;
+			padding: 0.5rem;
+			margin-bottom: 1rem;
+			background: linear-gradient(
+				90deg,
+				hsl(207, 51%, 56%) 0%,
+				hsl(190, 51%, 59%) 46%,
+				hsl(162, 97%, 73%) 100%
+			);
+			position: relative;
+			text-align: center;
+			@include mobile {
+				width: 100%;
+			}
+			&::before {
+				position: absolute;
+				content: 'SLIDE FOR OFFER';
+				color: white;
+				top: 50%;
+				left: 50%;
+				width: 100%;
+				transform: translate(-50%, -50%);
+			}
+			.wrapper {
+				width: 100%;
+				height: 100%;
+				.cube {
+					width: 2.2rem;
+					height: 100%;
+					background: white;
+					position: relative;
+					border-radius: 7px;
+					z-index: 2;
+					cursor: pointer;
+				}
+			}
+		}
+	}
+	.offer_text {
+		color: hsl(246, 33%, 33%);
+		@include font('Avenir-Heavy');
+	}
+	.scroll_down {
+		color: hsl(180, 3%, 68%);
+		border: 0;
+		background: transparent;
+		margin-bottom: 0.6rem;
+		display: inline-flex;
+		align-items: center;
+		gap: 0.5rem;
+		small {
+			letter-spacing: 0.5px;
+			font-size: 0.9em;
+			@include font('Avenir-Light');
+		}
+		img {
+			width: 8px;
+			animation: moveUpDown 0.5s ease-in-out infinite alternate;
+		}
+	}
 }
 @keyframes moveUpDown {
-  from {
-    transform: translateY(-4px);
-  }
-  to {
-    transform: translateY(4px);
-  }
+	from {
+		transform: translateY(-4px);
+	}
+	to {
+		transform: translateY(4px);
+	}
 }

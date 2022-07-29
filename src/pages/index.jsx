@@ -16,25 +16,25 @@ import MenuOpen from 'src/components/common/MenuOpen';
 import { useAppContext } from 'src/context';
 
 const data_head = {
-  title: 'Home',
+	title: 'Home',
 };
 
 export default function Home() {
-  const { isOpen } = useAppContext();
+	const { isOpen } = useAppContext();
 
-  return (
-    <Page {...data_head}>
-      <MenuOpen isVisible={isOpen}>
-        <MenuMobile />
-      </MenuOpen>
-      <Header>
-        <HomeHeader />
-      </Header>
-      <HomeHero />
-      <HomeDiscover />
-      <HomeList />
-      <HomeFeatures />
-      <Promo />
-    </Page>
-  );
+	return (
+		<Page {...data_head}>
+			<MenuOpen isVisible={isOpen}>
+				<MenuMobile />
+			</MenuOpen>
+			<Header>
+				<HomeHeader />
+			</Header>
+			<HomeHero />
+			<HomeDiscover />
+			<HomeList />
+			<HomeFeatures />
+			<Promo />
+		</Page>
+	);
 }

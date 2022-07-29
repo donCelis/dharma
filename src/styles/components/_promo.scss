@@ -1,84 +1,84 @@
 @use '../partials' as *;
 
 .home_promo {
-  &_info {
-    border-top: 1px solid #050404;
-    display: grid;
-    place-content: center;
-    text-align: center;
-    padding: 6rem 0 3rem;
-    gap: 2rem;
-    .promo_logo {
-      position: relative;
-      img {
-        width: 9rem;
-        margin: 0 auto;
-      }
-      &::before,
-      &::after {
-        content: '';
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 12rem;
-        height: 12rem;
-        border-radius: 100%;
-        filter: blur(50px) opacity(0.3);
-        z-index: -1;
-        @include mobile {
-          width: 10rem;
-          height: 10rem;
-        }
-      }
-      &::before {
-        left: -1.5rem;
-        background: #3c4fe3a0;
-        @include mobile {
-          left: 0;
-        }
-      }
-      &::after {
-        right: -1.5rem;
-        background: #78ffd5a0;
-        @include mobile {
-          right: 0;
-        }
-      }
-    }
-    h3 {
-      @include font('AvenirNext-UltraLight');
-      @include mobile {
-        margin-top: 1.5rem;
-      }
-    }
-    p {
-      @include font('AvenirNext-UltraLight');
-      font-size: 1.4em;
-      @include mobile {
-        br {
-          display: none;
-        }
-      }
-    }
-  }
+	&_info {
+		border-top: 1px solid #050404;
+		display: grid;
+		place-content: center;
+		text-align: center;
+		padding: 6rem 0 3rem;
+		gap: 2rem;
+		.promo_logo {
+			position: relative;
+			img {
+				width: 9rem;
+				margin: 0 auto;
+			}
+			&::before,
+			&::after {
+				content: '';
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+				width: 12rem;
+				height: 12rem;
+				border-radius: 100%;
+				filter: blur(50px) opacity(0.3);
+				z-index: -1;
+				@include mobile {
+					width: 10rem;
+					height: 10rem;
+				}
+			}
+			&::before {
+				left: -1.5rem;
+				background: #3c4fe3a0;
+				@include mobile {
+					left: 0;
+				}
+			}
+			&::after {
+				right: -1.5rem;
+				background: #78ffd5a0;
+				@include mobile {
+					right: 0;
+				}
+			}
+		}
+		h3 {
+			@include font('AvenirNext-UltraLight');
+			@include mobile {
+				margin-top: 1.5rem;
+			}
+		}
+		p {
+			@include font('AvenirNext-UltraLight');
+			font-size: 1.4em;
+			@include mobile {
+				br {
+					display: none;
+				}
+			}
+		}
+	}
 }
 
 .home_promo_li {
-  .article_mod {
-    @extend .home_promo_info;
-    border-top: 0;
-    gap: 0.8rem;
-    .promo_logo_li {
-      img {
-        width: 9rem;
-        margin: 0 auto;
-      }
-    }
-    h4 {
-      @include font('AvenirNext-Regular');
-      @include mobile {
-        margin-top: 1.5rem;
-      }
-    }
-  }
+	.article_mod {
+		@extend .home_promo_info;
+		border-top: 0;
+		gap: 0.8rem;
+		.promo_logo_li {
+			img {
+				width: 9rem;
+				margin: 0 auto;
+			}
+		}
+		h4 {
+			@include font('AvenirNext-Regular');
+			@include mobile {
+				margin-top: 1.5rem;
+			}
+		}
+	}
 }
