@@ -13,11 +13,6 @@ function Page({ title, children }) {
 				<meta name='title' content={title} />
 				<meta property='og:title' content={title} />
 				<meta name='twitter:title' content={title} />
-
-				<meta name='keywords' content='' />
-
-				<meta name='twitter:card' content='summary_large_image' />
-				<meta property='og:type' content='website' />
 			</Head>
 			<MenuOpen isVisible={isOpenContact}>
 				<ContactUs />
