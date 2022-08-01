@@ -57,8 +57,11 @@
 				mask-image: url('/images/icon_list.svg');
 				mask-size: cover;
 				mask-repeat: no-repeat;
-				@include mobile{
+				@include mobile {
 					top: calc(0.5rem / 2);
+					left: -1.3rem;
+					min-width: 0.9rem;
+					min-height: 0.9rem;
 				}
 			}
 			p {
