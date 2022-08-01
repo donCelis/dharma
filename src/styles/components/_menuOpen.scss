@@ -10,7 +10,6 @@
 	top: 0;
 	right: 0;
 	bottom: 0;
-	z-index: 9999;
 	.btn_close {
 		background: transparent;
 		border: 0;
@@ -60,6 +59,12 @@
 			color: #ffffff;
 			&:hover {
 				color: #ffffff;
+			}
+		}
+		button {
+			display: none;
+			@include mobile {
+				display: block;
 			}
 		}
 	}

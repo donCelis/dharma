@@ -6,7 +6,7 @@ export default function HomeHero() {
 	return (
 		<section className='home_hero'>
 			<div className='container mod_container'>
-				<div className='row'>
+				<div className='row py-3'>
 					<aside className='col-12 col-md-6'>
 						<m.article
 							viewport={{ once: true }}
@@ -19,7 +19,7 @@ export default function HomeHero() {
 								src='./images/dharma.svg'
 								alt='Dharma Logo'
 							/>
-							<h3 className='hero_title'>ENERGY HEALING FOR ALL</h3>
+							<h3 className='hero_title'>ENERGY HEALING <br /> FOR ALL</h3>
 							<p className='hero_info'>
 								We’ve built this platform so you can easily find and book alternative healing
 								sessions with local & bilingual energy healers.

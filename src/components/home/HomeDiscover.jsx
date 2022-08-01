@@ -67,14 +67,14 @@ export default function HomeDiscover() {
 								Once on the app, YOU can book sessions from our network of{' '}
 								<strong>Energy Healers</strong> and <strong>Holistic Practitioners.</strong>
 							</p>
-							<div className='d-flex align-items-center justify-content-center'>
+							<div className='d-flex align-items-center my-3'>
 								<img
 									className='me-1'
 									width='24px'
 									src='./images/swap-vertical.svg'
 									alt='swap-vertical'
 								/>
-								<p className='text-center m-0'>Tap for more info</p>
+								<p className='m-0'>tap the cards for more info</p>
 							</div>
 						</article>
 						<m.div

@@ -24,7 +24,7 @@ export default function Home() {
 
 	return (
 		<Page {...data_head}>
-			<MenuOpen isVisible={isOpen}>
+			<MenuOpen isVisible={isOpen} position='90'>
 				<MenuMobile />
 			</MenuOpen>
 			<Header>

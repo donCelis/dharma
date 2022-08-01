@@ -16,7 +16,7 @@ export default function ContactUs() {
 			sms: smsRef.current.value.trim(),
 		};
 
-		const message = ({ name, email, sms }) => `Hi Dharma Team, ${name}, ${sms}, ${email}`;
+		const message = ({ sms }) => `Hi Dharma Team, ${sms}`;
 
 		window.location.href = `mailto:${defaultEmail}?subject=${subject}&body=${message(data)}`;
 

@@ -12,7 +12,7 @@ const fadeInOut = {
 	},
 };
 
-export default function MenuOpen({ children, isVisible = false }) {
+export default function MenuOpen({ children, isVisible = false, position = '9999' }) {
 	const { handleCloseAll } = useAppContext();
 
 	return (
@@ -25,6 +25,7 @@ export default function MenuOpen({ children, isVisible = false }) {
 					animate={isVisible ? 'open' : 'closed'}
 					transition={{ duration: 1, ease: 'backInOut' }}
 					className='menu_open'
+					style={{ zIndex: position }}
 				>
 					<button onClick={handleCloseAll} className='btn_close'>
 						<img src='./images/icon_close.svg' alt='icon close modal' />

@@ -7,15 +7,15 @@ const item = {
 };
 
 export default function CardType({ front, back }) {
-	const titleBr = front.title.split(' ');
+	const [firstWord, lastWord] = front.title.split(' ');
 	return (
 		<m.div variants={item} className='flip'>
 			<article className='discover_item front'>
 				<Image className='img-fluid' src={front.image} alt={front.title} />
 				<p>
-					{titleBr[0]}
+					{firstWord}
 					<br />
-					{titleBr[1]}
+					{lastWord}
 				</p>
 			</article>
 			<article className='discover_item back'>

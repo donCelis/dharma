@@ -57,6 +57,9 @@
 				mask-image: url('/images/icon_list.svg');
 				mask-size: cover;
 				mask-repeat: no-repeat;
+				@include mobile{
+					top: calc(0.5rem / 2);
+				}
 			}
 			p {
 				@include font('AvenirNext-Regular');

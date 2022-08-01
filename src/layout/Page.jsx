@@ -14,7 +14,7 @@ function Page({ title, children }) {
 				<meta property='og:title' content={title} />
 				<meta name='twitter:title' content={title} />
 			</Head>
-			<MenuOpen isVisible={isOpenContact}>
+			<MenuOpen isVisible={isOpenContact} position='100'>
 				<ContactUs />
 			</MenuOpen>
 			{children}

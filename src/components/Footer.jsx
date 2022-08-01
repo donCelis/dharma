@@ -3,6 +3,7 @@ import { useAppContext } from 'src/context';
 
 export default function Footer() {
 	const { handleContact } = useAppContext();
+	const year = new Date().getFullYear();
 	return (
 		<footer>
 			<div className='container mod_container'>
@@ -24,7 +25,7 @@ export default function Footer() {
 					</ul>
 				</div>
 				<img className='pinterest' src='./images/pinterest.svg' alt='pinterest' />
-				<p className='m-0 name-logo'>© Dharma 2022</p>
+				<p className='m-0 name-logo'>© Dharma {year}</p>
 			</div>
 		</footer>
 	);

@@ -10,7 +10,7 @@ export default function TermsConditions() {
 			<section className='big_content'>
 				<p>
 					THE AGREEMENT: The use of this mobile application and services on this mobile application
-					(hereinafter referred to as “Application”) provided bDharma (hereinafter referred to as
+					(hereinafter referred to as “Application”) provided by Dharma (hereinafter referred to as
 					"Company") are subject to the following Terms & Conditions (hereinafter the "Agreement"),
 					all parts and sub-parts of which are specifically incorporated by reference here. This
 					Agreement shall govern the use of all pages on this Application (hereinafter collectively

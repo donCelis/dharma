@@ -2,13 +2,8 @@ import Link from 'next/link';
 import { useAppContext } from 'src/context';
 
 export default function MenuMobile() {
-	const { /* handleContact, */ handleOpen } = useAppContext();
-
-	const menuLinks = [
-		{ name: 'FAQs', to: '/faqs' },
-		{ name: 'Privacy Policy', to: '/privacy-policy' },
-		{ name: 'Terms & Conditions', to: '/terms-conditions' },
-	];
+	const { handleContact, handleOpen } = useAppContext();
+	const year = new Date().getFullYear();
 
 	return (
 		<div className='mobile'>
@@ -18,27 +13,22 @@ export default function MenuMobile() {
 				</a>
 			</div>
 			<nav className='menu_open_nav'>
-				{menuLinks.map((item, index) => (
-					<Link key={index} href={item.to}>
-						<a onClick={handleOpen}>{item.name}</a>
-					</Link>
-				))}
-				{/* <Link href={'/faqs'}>
-          <a>FAQs</a>
-        </Link>
-        <button onClick={handleContact}>Contact Us</button>
-        <Link href={'/'}>
-          <a>Privacy Policy</a>
-        </Link>
-        <Link href={'/'}>
-          <a>Terms & Conditions</a>
-        </Link> */}
+				<Link href={'/faqs'}>
+					<a onClick={handleOpen}>FAQs</a>
+				</Link>
+				<button onClick={handleContact}>Contact Us</button>
+				<Link href={'/privacy-policy'}>
+					<a onClick={handleOpen}>Privacy Policy</a>
+				</Link>
+				<Link href={'/terms-conditions'}>
+					<a onClick={handleOpen}>Terms & Conditions</a>
+				</Link>
 			</nav>
 			<div className='menu_open_footer'>
 				<figure>
 					<img src='./images/pinterest_menu.svg' alt='pinterest icon' />
 				</figure>
-				<p>© Dharma 2022</p>
+				<p>© Dharma {year}</p>
 			</div>
 		</div>
 	);

@@ -28,7 +28,11 @@ export default function Slide() {
 					</m.div>
 				</MinMotion>
 			</div>
-			<m.p initial={{ opacity: 0 }} animate={{ opacity: isVisible ? 1 : 0 }} className='offer_text'>
+			<m.p
+				initial={{ opacity: 0 }}
+				animate={{ opacity: isVisible ? 1 : 0 }}
+				className='offer_text m-0'
+			>
 				Download today and receive 20% off your first booked session
 			</m.p>
 		</section>
