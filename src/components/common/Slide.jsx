@@ -2,6 +2,19 @@ import { m, domMax } from 'framer-motion';
 import { useRef, useState } from 'react';
 import MinMotion from './MinMotion';
 
+const fadeIn = {
+	view: {
+		opacity: 1,
+		/* height: 'auto', */
+		scale: 1,
+	},
+	hide: {
+		opacity: 0,
+		/* height: 0, */
+		scale: 0,
+	},
+};
+
 export default function Slide() {
 	const limitRef = useRef(null);
 
@@ -29,8 +42,9 @@ export default function Slide() {
 				</MinMotion>
 			</div>
 			<m.p
-				initial={{ opacity: 0 }}
-				animate={{ opacity: isVisible ? 1 : 0 }}
+				initial='hide'
+				variants={fadeIn}
+				animate={isVisible ? 'view' : 'hide'}
 				className='offer_text m-0'
 			>
 				Download today and receive 20% off your first booked session
